@@ -1,0 +1,178 @@
+[
+    {
+        "id": "1",
+        "userId": "user_1",
+        "title": "JavaScript Basics",
+        "description": "Introduction to JavaScript fundamentals.",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+        "price": 29.99,
+        "isPublished": true,
+        "categoryId": "1",
+        "attachments": [
+            {
+                "id": "1",
+                "name": "Introduction Slides",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+                "courseId": "1"
+            },
+            {
+                "id": "2",
+                "name": "Practice Exercises",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+                "courseId": "1"
+            },
+            {
+                "id": "3",
+                "name": "Sample Project",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+                "courseId": "2"
+            }
+        ],
+        "purchases": [
+            {
+                "id": "1",
+                "userId": "user_1",
+                "courseId": "1",
+                "createdAt": "2023-11-14T12:00:00Z"
+            },
+            {
+                "id": "2",
+                "userId": "user_2",
+                "courseId": "2",
+                "createdAt": "2023-11-15T09:30:00Z"
+            }
+        ],
+        "chapters": [
+            {
+                "id": "1",
+                "title": "Getting Started with HTML",
+                "description": "Introduction to HTML basics.",
+                "videoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+                "position": 1,
+                "isPublished": true,
+                "isFree": true,
+                "courseId": "1"
+            },
+            {
+                "id": "2",
+                "title": "Working with CSS Styling",
+                "description": "Understanding Cascading Style Sheets.",
+                "videoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+                "position": 2,
+                "isPublished": true,
+                "isFree": true,
+                "courseId": "1"
+            },
+            {
+                "id": "3",
+                "title": "Introduction to JavaScript",
+                "description": "Basic concepts of JavaScript.",
+                "videoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+                "position": 3,
+                "isPublished": true,
+                "isFree": false,
+                "courseId": "1"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "userId": "user_2",
+        "title": "Python for Beginners",
+        "description": "Getting started with Python programming language.",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+        "price": 39.99,
+        "isPublished": true,
+        "categoryId": "1",
+        "progress": 0,
+        "purchases": [
+            {
+                "id": "1",
+                "userId": "user_1",
+                "courseId": "1",
+                "createdAt": "2023-11-14T12:00:00Z"
+            },
+            {
+                "id": "2",
+                "userId": "user_2",
+                "courseId": "2",
+                "createdAt": "2023-11-15T09:30:00Z"
+            }
+        ],
+        "chapters": [
+            {
+                "id": "1",
+                "title": "Getting Started with HTML",
+                "description": "Introduction to HTML basics.",
+                "videoUrl": "https://res.cloudinary.com/dqmv3pllu/video/upload/v1700285119/pexels_videos_wzzvuq.mp4",
+                "position": 1,
+                "isPublished": true,
+                "isFree": true,
+                "courseId": "1"
+            },
+            {
+                "id": "2",
+                "title": "Working with CSS Styling",
+                "description": "Understanding Cascading Style Sheets.",
+                "videoUrl": "https://res.cloudinary.com/dqmv3pllu/video/upload/v1700285119/pexels_videos_wzzvuq.mp4",
+                "position": 2,
+                "isPublished": true,
+                "isFree": true,
+                "courseId": "1"
+            },
+            {
+                "id": "3",
+                "title": "Introduction to JavaScript",
+                "description": "Basic concepts of JavaScript.",
+                "videoUrl": "https://res.cloudinary.com/dqmv3pllu/video/upload/v1700285119/pexels_videos_wzzvuq.mp4",
+                "position": 3,
+                "isPublished": true,
+                "isFree": false,
+                "courseId": "1"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "userId": "user_3",
+        "title": "UI/UX Design Fundamentals",
+        "description": "Fundamentals of User Interface and User Experience design.",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+        "price": 49.99,
+        "isPublished": true,
+        "categoryId": "2",
+        "progress": 50,
+        "chapters": [
+            {
+                "id": "1",
+                "title": "Getting Started with HTML",
+                "description": "Introduction to HTML basics.",
+                "videoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+                "position": 1,
+                "isPublished": true,
+                "isFree": true,
+                "courseId": "1"
+            },
+            {
+                "id": "2",
+                "title": "Working with CSS Styling",
+                "description": "Understanding Cascading Style Sheets.",
+                "videoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+                "position": 2,
+                "isPublished": true,
+                "isFree": true,
+                "courseId": "1"
+            },
+            {
+                "id": "3",
+                "title": "Introduction to JavaScript",
+                "description": "Basic concepts of JavaScript.",
+                "videoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+                "position": 3,
+                "isPublished": true,
+                "isFree": false,
+                "courseId": "1"
+            }
+        ]
+    }
+]

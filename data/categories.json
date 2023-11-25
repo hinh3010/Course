@@ -1,0 +1,116 @@
+[
+    {
+        "id": "1",
+        "name": "Music",
+        "courses": [
+            {
+                "id": "1",
+                "userId": "user_1",
+                "title": "JavaScript Basics",
+                "description": "Introduction to JavaScript fundamentals.",
+                "imageUrl": "https://example.com/javascript.png",
+                "price": 29.99,
+                "isPublished": true
+            },
+            {
+                "id": "2",
+                "userId": "user_2",
+                "title": "Python for Beginners",
+                "description": "Getting started with Python programming language.",
+                "imageUrl": "https://example.com/python.png",
+                "price": 39.99,
+                "isPublished": true
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Photography",
+        "courses": [
+            {
+                "id": "3",
+                "userId": "user_3",
+                "title": "UI/UX Design Fundamentals",
+                "description": "Fundamentals of User Interface and User Experience design.",
+                "imageUrl": "https://example.com/design.png",
+                "price": 49.99,
+                "isPublished": true
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "name": "Photography",
+        "courses": [
+            {
+                "id": "3",
+                "userId": "user_3",
+                "title": "UI/UX Design Fundamentals",
+                "description": "Fundamentals of User Interface and User Experience design.",
+                "imageUrl": "https://example.com/design.png",
+                "price": 49.99,
+                "isPublished": true
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "name": "Photography",
+        "courses": [
+            {
+                "id": "3",
+                "userId": "user_3",
+                "title": "UI/UX Design Fundamentals",
+                "description": "Fundamentals of User Interface and User Experience design.",
+                "imageUrl": "https://example.com/design.png",
+                "price": 49.99,
+                "isPublished": true
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "name": "Photography",
+        "courses": [
+            {
+                "id": "3",
+                "userId": "user_3",
+                "title": "UI/UX Design Fundamentals",
+                "description": "Fundamentals of User Interface and User Experience design.",
+                "imageUrl": "https://example.com/design.png",
+                "price": 49.99,
+                "isPublished": true
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "name": "Photography",
+        "courses": [
+            {
+                "id": "3",
+                "userId": "user_3",
+                "title": "UI/UX Design Fundamentals",
+                "description": "Fundamentals of User Interface and User Experience design.",
+                "imageUrl": "https://example.com/design.png",
+                "price": 49.99,
+                "isPublished": true
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "name": "Photography",
+        "courses": [
+            {
+                "id": "3",
+                "userId": "user_3",
+                "title": "UI/UX Design Fundamentals",
+                "description": "Fundamentals of User Interface and User Experience design.",
+                "imageUrl": "https://example.com/design.png",
+                "price": 49.99,
+                "isPublished": true
+            }
+        ]
+    }
+]

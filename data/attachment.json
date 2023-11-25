@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Introduction Slides",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+        "courseId": "1"
+    },
+    {
+        "id": "2",
+        "name": "Practice Exercises",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+        "courseId": "1"
+    },
+    {
+        "id": "3",
+        "name": "Sample Project",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
+        "courseId": "2"
+    }
+]

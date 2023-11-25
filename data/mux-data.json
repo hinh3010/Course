@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "assetId": "asset_1",
+        "playbackId": "playback_1",
+        "chapterId": "1"
+    },
+    {
+        "id": "2",
+        "assetId": "asset_2",
+        "playbackId": "playback_2",
+        "chapterId": "2"
+    },
+    {
+        "id": "3",
+        "assetId": "asset_3",
+        "playbackId": "playback_3",
+        "chapterId": "3"
+    }
+]

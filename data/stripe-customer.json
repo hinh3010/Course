@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "userId": "user_1",
+        "stripeCustomerId": "cus_123abc",
+        "createdAt": "2023-11-14T08:00:00Z"
+    },
+    {
+        "id": "2",
+        "userId": "user_2",
+        "stripeCustomerId": "cus_xyz987",
+        "createdAt": "2023-11-15T10:45:00Z"
+    }
+]
