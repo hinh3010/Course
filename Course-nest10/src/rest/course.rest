@@ -1,0 +1,41 @@
+
+###
+@BASE_URL = http://localhost:3000/api/courses
+
+###
+GET {{BASE_URL}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjExOTgxMywiZXhwIjoxNzAyNzI0NjEzLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.sfiycdmWPkQPbJVU0dM_nlcW74o1JdinDRxc3hKQkmw
+
+###
+GET {{BASE_URL}}/657473740b466482a91a6514
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjExOTgxMywiZXhwIjoxNzAyNzI0NjEzLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.sfiycdmWPkQPbJVU0dM_nlcW74o1JdinDRxc3hKQkmw
+
+###
+POST {{BASE_URL}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjExOTgxMywiZXhwIjoxNzAyNzI0NjEzLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.sfiycdmWPkQPbJVU0dM_nlcW74o1JdinDRxc3hKQkmw
+Content-Type: application/json
+
+{
+  "title": "Loài Ma Cà Rồng Đánh Thức Nguyên Lão Ngủ Say",
+  "description":"Loài Ma Cà Rồng Đánh Thức Nguyên Lão Ngủ Say",
+  "thumbnail":"https://static-cse.canva.com/blob/1252421/1600w-wK95f3XNRaM.jpg",
+  "basePrice": 0,
+  "categories": [],
+  "isPublished": true
+}
+
+###
+PATCH  {{BASE_URL}}/657473740b466482a91a6514
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjExOTgxMywiZXhwIjoxNzAyNzI0NjEzLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.sfiycdmWPkQPbJVU0dM_nlcW74o1JdinDRxc3hKQkmw
+Content-Type: application/json
+
+{
+  "title": "Ma Cà Rồng",
+  "description":"Loài Ma Cà Rồng Đánh Thức Nguyên Lão Ngủ Say",
+  "thumbnail":"https://static-cse.canva.com/blob/1252421/1600w-wK95f3XNRaM.jpg",
+  "basePrice": 0,
+  "categories": [],
+  "isPublished": true
+}
+
+

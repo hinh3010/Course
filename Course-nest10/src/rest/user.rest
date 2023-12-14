@@ -1,0 +1,38 @@
+
+###
+@BASE_URL = http://localhost:3000/api/users
+
+###
+GET {{BASE_URL}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjA1NDYzMSwiZXhwIjoxNzAyNjU5NDMxLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.IKTMbUe12IB-EA7Ze1qa6AglTDdrRIxcbSseKCbErYs
+
+###
+GET {{BASE_URL}}/656c80c397a11634b3a16b64
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjA1NDYzMSwiZXhwIjoxNzAyNjU5NDMxLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.IKTMbUe12IB-EA7Ze1qa6AglTDdrRIxcbSseKCbErYs
+
+###
+GET {{BASE_URL}}/account/A205bdc5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjA1NDYzMSwiZXhwIjoxNzAyNjU5NDMxLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.IKTMbUe12IB-EA7Ze1qa6AglTDdrRIxcbSseKCbErYs
+
+###
+PATCH {{BASE_URL}}/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjA1NDYzMSwiZXhwIjoxNzAyNjU5NDMxLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.IKTMbUe12IB-EA7Ze1qa6AglTDdrRIxcbSseKCbErYs
+Content-Type: application/json
+
+{
+  "displayName": "John Doe 2",
+  "phoneNumber":"0916425137"
+}
+
+###
+GET  {{BASE_URL}}/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjA1NDYzMSwiZXhwIjoxNzAyNjU5NDMxLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.IKTMbUe12IB-EA7Ze1qa6AglTDdrRIxcbSseKCbErYs
+
+###
+PATCH {{BASE_URL}}/656c80c397a11634b3a16b64
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjA1NDYzMSwiZXhwIjoxNzAyNjU5NDMxLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.IKTMbUe12IB-EA7Ze1qa6AglTDdrRIxcbSseKCbErYs
+Content-Type: application/json
+
+{
+  "roles": ["user", "admin", "super admin", "mentor"]
+}

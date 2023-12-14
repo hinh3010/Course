@@ -1,0 +1,44 @@
+
+###
+@BASE_URL = http://localhost:3000/api/auth
+
+###
+GET {{BASE_URL}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjA1NDYzMSwiZXhwIjoxNzAyNjU5NDMxLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.IKTMbUe12IB-EA7Ze1qa6AglTDdrRIxcbSseKCbErYs
+
+###
+POST {{BASE_URL}}/register
+Content-Type: application/json
+
+{
+  "displayName": "John Doe",
+  "email": "john@example.com",
+  "password": "helloadu"
+}
+
+###
+POST {{BASE_URL}}/login
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "hellocacbantre"
+}
+
+###
+POST {{BASE_URL}}/change-password
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "oldPassword": "hellocac",
+  "newPassword": "hellocacbantre"
+}
+
+###
+POST {{BASE_URL}}/refresh
+Content-Type: application/json
+
+{
+  "refetchToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjA1NDYzMSwiZXhwIjoxNzAyMzEzODMxLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.6ayJ5VfOaJ_UahyHY872FeO2WPUOn6Wj64rV0DuidVU"
+}

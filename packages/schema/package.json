@@ -1,0 +1,26 @@
+{
+  "name": "@hellocacbantre/schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=20 <21"
+  },
+  "keywords": [
+    "hellocacbantre"
+  ],
+  "author": "hinh3010",
+  "license": "hinh3010",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hinh3010/packages/schema"
+  },
+  "dependencies": {
+    "mongoose": "^8.0.2"
+  },
+  "peerDependencies": {}
+}
