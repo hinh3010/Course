@@ -1,4 +1,3 @@
-import { UserButton } from "@clerk/nextjs";
 import { LogOut } from "lucide-react";
 import Link from "next/link";
 
@@ -24,9 +23,6 @@ export const NavbarRoutes = () => {
                         Teacher mode
                     </Button>
                 </Link> */}
-                <UserButton
-                    afterSignOutUrl="/"
-                />
             </div>
         </>
     )
