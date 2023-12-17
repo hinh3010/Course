@@ -2,11 +2,12 @@ import { SearchInput } from "@/components/search-input";
 import { CoursesList } from "@/components/courses-list";
 import { Categories } from "./_components/categories";
 import faker, { Category, Course } from "@/data";
+import { getCourses } from "@/actions/course-action";
+import { getCategories } from "@/actions/category-action";
 
 const CoursesPage = async () => {
-    const categories: Category[] = faker.categories
-
-    const courses: Course[] = faker.courses
+    const categories: Category[] = await getCategories()
+    const courses: Course[] = await getCourses()
 
     return (
         <>

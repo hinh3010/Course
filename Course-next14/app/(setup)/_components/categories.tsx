@@ -11,9 +11,10 @@ import {
 import { IconType } from "react-icons";
 
 import { CategoryItem } from "./category-item";
+import { Category } from "@/data";
 
 interface CategoriesProps {
-    items: any[];
+    items: Category[];
 }
 
 const iconMap: Record<any["name"], IconType> = {
@@ -33,10 +34,10 @@ export const Categories = ({
         <div className="flex items-center gap-x-2 overflow-x-auto pb-2">
             {items.map((item) => (
                 <CategoryItem
-                    key={item.id}
+                    key={item._id}
                     label={item.name}
                     icon={iconMap[item.name]}
-                    value={item.id}
+                    value={item.slug}
                 />
             ))}
         </div>

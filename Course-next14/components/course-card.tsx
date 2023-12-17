@@ -40,9 +40,17 @@ export const CourseCard = ({
                     <div className="text-lg md:text-base font-medium group-hover:text-sky-700 transition line-clamp-2">
                         {title}
                     </div>
-                    <p className="text-xs text-muted-foreground">
-                        {category}
-                    </p>
+                    <div className="flex flex-wrap gap-1">
+                        <span className="text-xs text-muted-foreground border py-1 px-2 rounded-2xl">
+                            {category}
+                        </span>
+                        <span className="text-xs text-muted-foreground border py-1 px-2 rounded-2xl">
+                            {category}
+                        </span>
+                        <span className="text-xs text-muted-foreground border py-1 px-2 rounded-2xl">
+                            {category}
+                        </span>
+                    </div>
                     <div className="my-3 flex items-center gap-x-2 text-sm md:text-xs">
                         <div className="flex items-center gap-x-1 text-slate-500">
                             <IconBadge size="sm" icon={BookOpen} />

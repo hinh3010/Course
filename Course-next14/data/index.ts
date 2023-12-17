@@ -1,25 +1,27 @@
-export interface Course {
-    id: string;
-    userId: string;
+export type Course = {
+    _id: string;
     title: string;
-    description?: string | null;
-    imageUrl?: string | null;
-    price?: number | null;
+    slug: string;
+    description: string;
+    thumbnail: string;
+    basePrice: number;
     isPublished: boolean;
-    categoryId?: string | null;
-    category?: Category | null;
-    chapters?: Chapter[];
-    attachments?: Attachment[];
-    purchases?: Purchase[];
-    createdAt: Date;
-    updatedAt: Date;
+    categories: string[];
+    mentor: string;
+    status: string;
+    createdAt: string;
+    updatedAt: string;
+    __v: number;
 }
 
-export interface Category {
-    id: string;
+export type Category = {
+    _id: string;
     name: string;
-    courses?: Course[];
-}
+    slug: string;
+    createdAt: string;
+    updatedAt: string;
+    __v: number;
+};
 
 export interface Attachment {
     id: string;
@@ -94,14 +96,14 @@ type FakerData = {
 };
 
 const faker: FakerData = {
-    courses: require('./courses.json'),
-    attachments: require('./attachment.json'),
-    categories: require('./categories.json'),
-    chapters: require('./chapter.json'),
-    muxData: require('./mux-data.json'),
-    purchases: require('./purchase.json'),
-    stripeCustomers: require('./stripe-customer.json'),
-    userProgresses: require('./user-progress.json'),
-}
+    courses: require("./courses.json"),
+    attachments: require("./attachment.json"),
+    categories: require("./categories.json"),
+    chapters: require("./chapter.json"),
+    muxData: require("./mux-data.json"),
+    purchases: require("./purchase.json"),
+    stripeCustomers: require("./stripe-customer.json"),
+    userProgresses: require("./user-progress.json"),
+};
 
-export default faker
+export default faker;

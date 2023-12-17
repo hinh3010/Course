@@ -3,7 +3,9 @@ const nextConfig = {
     images: {
         domains: [
             "upload.wikimedia.org",
-            "example.com"
+            "example.com",
+            "*",
+            "static-cse.canva.com"
         ]
     },
     env: {
