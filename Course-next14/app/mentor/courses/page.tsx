@@ -1,13 +1,14 @@
-import { DataTable } from "./_components/data-table";
-import { columns } from "./_components/columns";
-import faker, { Course } from "@/data";
-import { Input } from "@/components/ui/input"
-import Link from "next/link";
+import { getCourses } from "@/actions/course-action";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Course } from "@/data";
 import { PlusCircle } from "lucide-react";
+import Link from "next/link";
+import { columns } from "./_components/columns";
+import { DataTable } from "./_components/data-table";
 
 const CoursesPage = async () => {
-    const courses: Course[] = faker.courses
+    const courses: Course[] = await getCourses()
 
     return (
         <div className="p-6">

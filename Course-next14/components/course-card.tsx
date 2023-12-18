@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
@@ -5,6 +7,7 @@ import { BookOpen } from "lucide-react";
 import { IconBadge } from "@/components/icon-badge";
 import { formatPrice } from "@/lib/format";
 import { CourseProgress } from "@/components/course-progress";
+import { Category } from "@/data";
 
 interface CourseCardProps {
     id: string;
@@ -13,20 +16,21 @@ interface CourseCardProps {
     chaptersLength: number;
     price: number;
     progress: number | null;
-    category: string;
+    categories: Category[];
+    slug: string
 };
 
 export const CourseCard = ({
-    id,
     title,
     imageUrl,
     chaptersLength,
     price,
     progress,
-    category
+    categories,
+    slug
 }: CourseCardProps) => {
     return (
-        <Link href={`/my-courses/${id}`}>
+        <Link href={`/my-courses/${slug}`}>
             <div className="group hover:shadow-sm transition overflow-hidden border rounded-lg p-3 h-full">
                 <div className="relative w-full aspect-video rounded-md overflow-hidden">
                     <Image
@@ -41,21 +45,19 @@ export const CourseCard = ({
                         {title}
                     </div>
                     <div className="flex flex-wrap gap-1">
-                        <span className="text-xs text-muted-foreground border py-1 px-2 rounded-2xl">
-                            {category}
-                        </span>
-                        <span className="text-xs text-muted-foreground border py-1 px-2 rounded-2xl">
-                            {category}
-                        </span>
-                        <span className="text-xs text-muted-foreground border py-1 px-2 rounded-2xl">
-                            {category}
-                        </span>
+                        {
+                            categories.map(category => (
+                                <span key={category._id} className="text-xs text-muted-foreground border py-1 px-2 rounded-2xl">
+                                    {category.name}
+                                </span>
+                            ))
+                        }
                     </div>
                     <div className="my-3 flex items-center gap-x-2 text-sm md:text-xs">
                         <div className="flex items-center gap-x-1 text-slate-500">
                             <IconBadge size="sm" icon={BookOpen} />
                             <span>
-                                {chaptersLength} {chaptersLength === 1 ? "Chapter" : "Chapters"}
+                                {chaptersLength} {chaptersLength >= 1 ? "Chapter" : "Chapters"}
                             </span>
                         </div>
                     </div>

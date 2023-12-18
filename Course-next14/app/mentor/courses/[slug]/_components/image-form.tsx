@@ -13,7 +13,6 @@ import { Course } from "@/data";
 
 interface ImageFormProps {
     initialData: Course
-    courseId: string;
 };
 
 const formSchema = z.object({
@@ -24,7 +23,6 @@ const formSchema = z.object({
 
 export const ImageForm = ({
     initialData,
-    courseId
 }: ImageFormProps) => {
     const [isEditing, setIsEditing] = useState(false);
 
@@ -50,13 +48,13 @@ export const ImageForm = ({
                     {isEditing && (
                         <>Cancel</>
                     )}
-                    {!isEditing && !initialData.imageUrl && (
+                    {!isEditing && !initialData.thumbnail && (
                         <>
                             <PlusCircle className="h-4 w-4 mr-2" />
                             Add an image
                         </>
                     )}
-                    {!isEditing && initialData.imageUrl && (
+                    {!isEditing && initialData.thumbnail && (
                         <>
                             <Pencil className="h-4 w-4 mr-2" />
                             Edit image
@@ -65,7 +63,7 @@ export const ImageForm = ({
                 </Button>
             </div>
             {!isEditing && (
-                !initialData.imageUrl ? (
+                !initialData.thumbnail ? (
                     <div className="flex items-center justify-center h-60 bg-slate-200 rounded-md">
                         <ImageIcon className="h-10 w-10 text-slate-500" />
                     </div>
@@ -75,7 +73,7 @@ export const ImageForm = ({
                             alt="Upload"
                             fill
                             className="object-cover rounded-md"
-                            src={initialData.imageUrl}
+                            src={initialData.thumbnail}
                         />
                     </div>
                 )

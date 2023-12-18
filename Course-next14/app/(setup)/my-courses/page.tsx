@@ -1,14 +1,13 @@
-import { SearchInput } from "@/components/search-input";
 import { CoursesList } from "@/components/courses-list";
+import { SearchInput } from "@/components/search-input";
 
-import faker, { Category, Course } from "@/data";
+import { getCourses } from "@/actions/course-action";
+import { Course } from "@/data";
 import { CheckCircle, Clock } from "lucide-react";
 import { InfoCard } from "./_components/info-card";
 
 const MyCoursesPage = async () => {
-    const categories: Category[] = faker.categories
-
-    const courses: Course[] = faker.courses
+    const courses: Course[] = await getCourses()
 
     return (
         <>

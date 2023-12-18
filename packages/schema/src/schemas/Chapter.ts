@@ -8,7 +8,7 @@ const Chapter = new Schema<IChapter>(
     description: { type: String },
     videoUrl: { type: String },
     thumbnail: { type: String },
-    position: { type: Number, required: true },
+    // position: { type: Number, required: true },
     isPublished: { type: Boolean, default: false },
     isFree: { type: Boolean, default: false },
     course: { type: Schema.Types.ObjectId, ref: 'Course', required: true },

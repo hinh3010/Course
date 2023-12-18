@@ -11,36 +11,25 @@ import { PriceForm } from "./_components/price-form";
 import { AttachmentForm } from "./_components/attachment-form";
 import { ChaptersForm } from "./_components/chapters-form";
 import { Actions } from "./_components/actions";
-import faker from "@/data";
+import { Category, Course } from "@/data";
+import { getCourseBySlug } from "@/actions/course-action";
+import { getCategories } from "@/actions/category-action";
 
 const CourseIdPage = async ({
     params
 }: {
-    params: { courseId: string }
+    params: { slug: string }
 }) => {
-    const course = faker.courses[0]
+    const course: Course = await getCourseBySlug(params.slug)
 
-    const categories = [
-        {
-            "id": "1",
-            "name": "Programming"
-        },
-        {
-            "id": "2",
-            "name": "Design"
-        },
-        {
-            "id": "3",
-            "name": "Marketing"
-        }
-    ]
+    const categories: Category[] = await getCategories()
 
     const requiredFields = [
         course.title,
         course.description,
-        course.imageUrl,
-        course.price,
-        course.categoryId,
+        course.thumbnail,
+        course.basePrice,
+        course.categories,
         course.chapters?.some((chapter) => chapter.isPublished),
     ];
 
@@ -70,7 +59,7 @@ const CourseIdPage = async ({
                     </div>
                     <Actions
                         disabled={!isComplete}
-                        courseId={params.courseId}
+                        courseId={params.slug}
                         isPublished={course.isPublished}
                     />
                 </div>
@@ -85,24 +74,23 @@ const CourseIdPage = async ({
                         </div>
                         <TitleForm
                             initialData={course}
-                            courseId={course.id}
+                            courseId={course._id}
                         />
                         <DescriptionForm
                             initialData={course}
-                            courseId={course.id}
+                            courseId={course._id}
                         />
                         <ImageForm
                             initialData={course}
-                            courseId={course.id}
                         />
-                        <CategoryForm
+                        {/* <CategoryForm
                             initialData={course}
-                            courseId={course.id}
+                            courseId={course._id}
                             options={categories.map((category) => ({
                                 label: category.name,
-                                value: category.id,
+                                value: category._id,
                             }))}
-                        />
+                        /> */}
                     </div>
                     <div className="space-y-6">
                         <div>
@@ -114,7 +102,7 @@ const CourseIdPage = async ({
                             </div>
                             <ChaptersForm
                                 initialData={course}
-                                courseId={course.id}
+                                courseId={course._id}
                             />
                         </div>
                         <div>
@@ -126,7 +114,7 @@ const CourseIdPage = async ({
                             </div>
                             <PriceForm
                                 initialData={course}
-                                courseId={course.id}
+                                courseId={course._id}
                             />
                         </div>
                         <div>
@@ -138,7 +126,7 @@ const CourseIdPage = async ({
                             </div>
                             <AttachmentForm
                                 initialData={course}
-                                courseId={course.id}
+                                courseId={course._id}
                             />
                         </div>
                     </div>

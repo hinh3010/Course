@@ -18,7 +18,7 @@ import dynamic from "next/dynamic";
 const ChapterIdPage = async ({
     params
 }: {
-    params: { courseId: string; chapterId: string }
+    params: { slug: string; chapterId: string }
 }) => {
     const chapter: Chapter = faker.chapters[0]
 
@@ -47,7 +47,7 @@ const ChapterIdPage = async ({
                 <div className="flex items-center justify-between">
                     <div className="w-full">
                         <Link
-                            href={`/mentor/courses/${params.courseId}`}
+                            href={`/mentor/courses/${params.slug}`}
                             className="flex items-center text-sm hover:opacity-75 transition mb-6"
                         >
                             <ArrowLeft className="h-4 w-4 mr-2" />
@@ -64,7 +64,7 @@ const ChapterIdPage = async ({
                             </div>
                             <ChapterActions
                                 disabled={!isComplete}
-                                courseId={params.courseId}
+                                courseId={params.slug}
                                 chapterId={params.chapterId}
                                 isPublished={chapter.isPublished}
                             />

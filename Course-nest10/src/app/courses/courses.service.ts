@@ -36,13 +36,38 @@ export class CoursesService {
     const courses = await CourseModel.find({
       status: 'active',
       isPublished: true,
-    }).lean();
+    })
+      .populate({
+        path: 'categories',
+      })
+      .lean();
 
     return courses;
   }
 
+  async findBySlug(slug: string) {
+    const course = await CourseModel.findOne({ slug, status: 'active', isPublished: true })
+      .populate({
+        path: 'chapters',
+        match: { isPublished: true, deleted: { $exists: false } },
+      })
+      .populate({
+        path: 'categories',
+      })
+      .lean();
+    return course;
+  }
+
   async findById(id: string) {
-    const course = await CourseModel.findOne({ _id: id, status: 'active', isPublished: true }).lean();
+    const course = await CourseModel.findOne({ _id: id, status: 'active', isPublished: true })
+      .populate({
+        path: 'chapters',
+        match: { isPublished: true, deleted: { $exists: false } },
+      })
+      .populate({
+        path: 'categories',
+      })
+      .lean();
     return course;
   }
 

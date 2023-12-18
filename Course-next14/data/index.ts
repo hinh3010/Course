@@ -6,13 +6,13 @@ export type Course = {
     thumbnail: string;
     basePrice: number;
     isPublished: boolean;
-    categories: string[];
+    categories: Category[];
     mentor: string;
     status: string;
     createdAt: string;
     updatedAt: string;
-    __v: number;
-}
+    chapters: Chapter[] | null;
+};
 
 export type Category = {
     _id: string;
@@ -20,7 +20,6 @@ export type Category = {
     slug: string;
     createdAt: string;
     updatedAt: string;
-    __v: number;
 };
 
 export interface Attachment {

@@ -17,6 +17,7 @@ export interface ICourse {
 
   mentor: ObjectId
   categories: ObjectId[]
+  chapters: ObjectId[]
   deleted: IDeleted
 }
 
@@ -44,7 +45,7 @@ export interface IChapter {
   description: string
   videoUrl: string
   thumbnail: string
-  position: number
+  // position: number
   isPublished: boolean
   isFree: boolean
 

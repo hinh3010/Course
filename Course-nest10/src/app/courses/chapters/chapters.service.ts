@@ -92,15 +92,15 @@ export class ChaptersService {
       }
     });
 
-    const lastChapter = await ChapterModel.findOne({
-      course: courseId,
-    })
-      .select('position')
-      .sort({ createdAt: -1 })
-      .lean();
+    // const lastChapter = await ChapterModel.findOne({
+    //   course: courseId,
+    // })
+    //   .select('position')
+    //   .sort({ createdAt: -1 })
+    //   .lean();
 
-    const position = lastChapter?.position ? lastChapter?.position + 1 : 1;
-    doc['position'] = position;
+    // const position = lastChapter?.position ? lastChapter?.position + 1 : 1;
+    // doc['position'] = position;
 
     const chapter = await ChapterModel.create(doc);
     return chapter.toJSON();

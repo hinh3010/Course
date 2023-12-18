@@ -18,6 +18,11 @@ export class CoursesController {
     return this.coursesService.findById(id);
   }
 
+  @Get('slug/:slug')
+  findBySlug(@Param('slug') slug: string) {
+    return this.coursesService.findBySlug(slug);
+  }
+
   @Post()
   @UseGuards(new RolesGuard('admin'))
   createCourse(@Body() createCourseDto: CreateCourseDto, @GetAccountContext('_id') accountId: string) {

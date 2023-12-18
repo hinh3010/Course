@@ -1,5 +1,6 @@
+'use client'
 import { CourseCard } from "@/components/course-card";
-import { Category, Course } from "@/data";
+import { Course } from "@/data";
 
 type CourseWithProgressWithCategory = Course
 
@@ -17,14 +18,13 @@ export const CoursesList = ({
                     <CourseCard
                         key={item._id}
                         id={item._id}
+                        slug={item.slug}
                         title={item.title}
                         imageUrl={item.thumbnail!}
                         price={item.basePrice}
                         progress={10}
-                        chaptersLength={10}
-                        category={'adu'}
-                    // chaptersLength={item.chapters!.length}
-                    // category={item?.category?.name!}
+                        chaptersLength={item.categories?.length || 0}
+                        categories={item.categories}
                     />
                 ))}
             </div>

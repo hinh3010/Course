@@ -11,6 +11,7 @@ const Course = new Schema<ICourse>(
     basePrice: { type: Number },
     isPublished: { type: Boolean, default: false },
     categories: [{ type: Schema.Types.ObjectId, index: true, ref: 'Category' }],
+    chapters: [{ type: Schema.Types.ObjectId, ref: 'Chapter' }],
     mentor: {
       type: Schema.Types.ObjectId,
       required: true,

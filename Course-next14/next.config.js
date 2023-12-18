@@ -10,7 +10,11 @@ const nextConfig = {
     },
     env: {
         BASE_URL: process.env.BASE_URL
-    }
+    },
+    webpackDevMiddleware: (config) => {
+        config.watchOptions.ignored = [/node_modules/];
+        return config;
+    },
 }
 
 module.exports = nextConfig
