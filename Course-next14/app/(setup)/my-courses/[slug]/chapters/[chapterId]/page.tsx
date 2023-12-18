@@ -12,13 +12,14 @@ import { CourseEnrollButton } from "./_components/course-enroll-button";
 import { CourseProgressButton } from "./_components/course-progress-button";
 import faker, { Attachment, Chapter, Course, MuxData, Purchase, UserProgress } from "@/data";
 import dynamic from "next/dynamic";
+import { getCourseBySlug } from "@/actions/course-action";
 
 const ChapterIdPage = async ({
     params
 }: {
-    params: { courseId: string; chapterId: string }
+        params: { slug: string; chapterId: string }
 }) => {
-    const course: Course = faker.courses[0]
+    const course: Course = await getCourseBySlug(params.slug)
     const purchase: Purchase = faker.purchases[0]
     const chapter: Chapter = faker.chapters[0]
     const userProgress: UserProgress = faker.userProgresses[0]
@@ -48,7 +49,7 @@ const ChapterIdPage = async ({
                     <VideoPlayer
                         chapterId={params.chapterId}
                         title={chapter.title}
-                        courseId={params.courseId}
+                        courseId={course._id}
                         nextChapterId={nextChapter?.id}
                         videoUrl={chapter.videoUrl!}
                         isLocked={isLocked}
@@ -63,14 +64,14 @@ const ChapterIdPage = async ({
                         {purchase ? (
                             <CourseProgressButton
                                 chapterId={params.chapterId}
-                                courseId={params.courseId}
+                                courseId={course._id}
                                 nextChapterId={nextChapter?.id}
                                 isCompleted={!!userProgress?.isCompleted}
                             />
                         ) : (
                             <CourseEnrollButton
-                                courseId={params.courseId}
-                                price={course.price!}
+                                courseId={course._id}
+                                price={course.basePrice!}
                             />
                         )}
                     </div>

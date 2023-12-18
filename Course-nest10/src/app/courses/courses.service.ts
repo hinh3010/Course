@@ -34,9 +34,13 @@ export class CoursesService {
 
   async findAll() {
     const courses = await CourseModel.find({
-      status: 'active',
-      isPublished: true,
+      // status: 'active',
+      // isPublished: true,
     })
+      .populate({
+        path: 'chapters',
+        match: { isPublished: true, deleted: { $exists: false } },
+      })
       .populate({
         path: 'categories',
       })
@@ -46,7 +50,11 @@ export class CoursesService {
   }
 
   async findBySlug(slug: string) {
-    const course = await CourseModel.findOne({ slug, status: 'active', isPublished: true })
+    const course = await CourseModel.findOne({
+      slug,
+      // status: 'active',
+      // isPublished: true,
+    })
       .populate({
         path: 'chapters',
         match: { isPublished: true, deleted: { $exists: false } },

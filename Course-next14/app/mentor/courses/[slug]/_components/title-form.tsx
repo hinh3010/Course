@@ -17,12 +17,11 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { axiosActions } from "@/lib/axios-actions";
+import { Course } from "@/data";
 
 interface TitleFormProps {
-    initialData: {
-        title: string;
-    };
-    courseId: string;
+    course: Course
 };
 
 const formSchema = z.object({
@@ -32,8 +31,7 @@ const formSchema = z.object({
 });
 
 export const TitleForm = ({
-    initialData,
-    courseId
+    course
 }: TitleFormProps) => {
     const [isEditing, setIsEditing] = useState(false);
 
@@ -43,16 +41,18 @@ export const TitleForm = ({
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
-        defaultValues: initialData,
+        defaultValues: course,
     });
 
     const { isSubmitting, isValid } = form.formState;
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
-            toast.success("Course updated");
+            if (values.title === course.title) return
+            const newCourse: Course = await axiosActions.patch(`courses/${course._id}`, values)
+            toast.success("Course created");
             toggleEdit();
-            router.refresh();
+            router.push(`${newCourse.slug}`);
         } catch {
             toast.error("Something went wrong");
         }
@@ -75,7 +75,7 @@ export const TitleForm = ({
             </div>
             {!isEditing && (
                 <p className="text-sm mt-2">
-                    {initialData.title}
+                    {course.title}
                 </p>
             )}
             {isEditing && (

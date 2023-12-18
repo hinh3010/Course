@@ -23,7 +23,7 @@ export const CoursesList = ({
                         imageUrl={item.thumbnail!}
                         price={item.basePrice}
                         progress={10}
-                        chaptersLength={item.categories?.length || 0}
+                        chaptersLength={item.chapters?.length || 0}
                         categories={item.categories}
                     />
                 ))}

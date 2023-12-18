@@ -1,4 +1,4 @@
-'use server'
+// 'use server'
 import { fetchActions } from "@/lib/fetch-actions";
 
 export const getCourses = async () => {

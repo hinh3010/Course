@@ -21,7 +21,6 @@ const CourseIdPage = async ({
     params: { slug: string }
 }) => {
     const course: Course = await getCourseBySlug(params.slug)
-
     const categories: Category[] = await getCategories()
 
     const requiredFields = [
@@ -73,8 +72,7 @@ const CourseIdPage = async ({
                             </h2>
                         </div>
                         <TitleForm
-                            initialData={course}
-                            courseId={course._id}
+                            course={course}
                         />
                         <DescriptionForm
                             initialData={course}

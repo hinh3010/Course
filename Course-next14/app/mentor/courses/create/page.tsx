@@ -4,7 +4,6 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-
 import {
     Form,
     FormControl,
@@ -17,14 +16,18 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
+import { axiosActions } from "@/lib/axios-actions";
+import { useRouter } from "next/navigation";
+import { Course } from "@/data";
 
 const formSchema = z.object({
-    title: z.string().min(1, {
-        message: "Title is required",
+    title: z.string().min(8, {
+        message: "Title must be at least 8 characters long",
     }),
 });
 
 const CreatePage = () => {
+    const router = useRouter();
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -36,10 +39,11 @@ const CreatePage = () => {
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
-            console.log({ values })
+            const course: Course = await axiosActions.post('courses', values)
+            router.push(`${course.slug}`);
             toast.success("Course created");
-        } catch {
-            toast.error("Something went wrong");
+        } catch (error: any) {
+            toast.error(error.message, { position: 'top-right' })
         }
     }
 
