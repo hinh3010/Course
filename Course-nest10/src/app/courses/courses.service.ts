@@ -34,12 +34,12 @@ export class CoursesService {
 
   async findAll() {
     const courses = await CourseModel.find({
-      // status: 'active',
-      // isPublished: true,
+      status: 'active',
+      isPublished: true,
     })
       .populate({
         path: 'chapters',
-        match: { isPublished: true, deleted: { $exists: false } },
+        match: { isPublished: true },
       })
       .populate({
         path: 'categories',
@@ -52,12 +52,12 @@ export class CoursesService {
   async findBySlug(slug: string) {
     const course = await CourseModel.findOne({
       slug,
-      // status: 'active',
-      // isPublished: true,
+      status: 'active',
+      isPublished: true,
     })
       .populate({
         path: 'chapters',
-        match: { isPublished: true, deleted: { $exists: false } },
+        match: { isPublished: true },
       })
       .populate({
         path: 'categories',
@@ -70,7 +70,7 @@ export class CoursesService {
     const course = await CourseModel.findOne({ _id: id, status: 'active', isPublished: true })
       .populate({
         path: 'chapters',
-        match: { isPublished: true, deleted: { $exists: false } },
+        match: { isPublished: true },
       })
       .populate({
         path: 'categories',
@@ -79,12 +79,37 @@ export class CoursesService {
     return course;
   }
 
+  async checkout({ id, accountId }: { id: string; accountId: string }) {
+    const course = await CourseModel.findOne({
+      status: 'active',
+      isPublished: true,
+      _id: id,
+    }).lean();
+
+    if (!course) throw new HttpException('Course not found', HttpStatus.NOT_FOUND);
+
+    const purchase = await PurchaseModel.findOne({
+      account: accountId,
+      course: id,
+    });
+
+    if (purchase) throw new HttpException('Already purchased', HttpStatus.BAD_REQUEST);
+
+    return (
+      await PurchaseModel.create({
+        account: accountId,
+        course: id,
+      })
+    ).toJSON();
+  }
+
+  // mentor
   async create(createCourseDto: CreateCourseDto) {
     const { accountId, categories, isPublished, title } = createCourseDto;
 
     const doc = {
       title,
-      isPublished: isPublished ?? false,
+      isPublished,
       mentor: accountId,
       slug: await this._genSlug(title),
     };
@@ -140,27 +165,30 @@ export class CoursesService {
     return course;
   }
 
-  async checkout({ id, accountId }: { id: string; accountId: string }) {
-    const course = await CourseModel.findOne({
-      status: 'active',
-      isPublished: true,
-      _id: id,
-    }).lean();
-
-    if (!course) throw new HttpException('Course not found', HttpStatus.NOT_FOUND);
-
-    const purchase = await PurchaseModel.findOne({
-      account: accountId,
-      course: id,
-    });
-
-    if (purchase) throw new HttpException('Already purchased', HttpStatus.BAD_REQUEST);
-
-    return (
-      await PurchaseModel.create({
-        account: accountId,
-        course: id,
+  async findMyCourses(accountId: string) {
+    const courses = await CourseModel.find({
+      mentor: accountId,
+    })
+      .populate({
+        path: 'chapters',
       })
-    ).toJSON();
+      .populate({
+        path: 'categories',
+      })
+      .lean();
+
+    return courses;
+  }
+
+  async findMyCourseById({ courseId, accountId }: { courseId: string; accountId: string }) {
+    const course = await CourseModel.findOne({ _id: courseId, mentor: accountId })
+      .populate({
+        path: 'chapters',
+      })
+      .populate({
+        path: 'categories',
+      })
+      .lean();
+    return course;
   }
 }

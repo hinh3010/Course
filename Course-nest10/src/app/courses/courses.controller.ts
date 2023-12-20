@@ -23,18 +23,6 @@ export class CoursesController {
     return this.coursesService.findBySlug(slug);
   }
 
-  @Post()
-  @UseGuards(new RolesGuard('admin'))
-  createCourse(@Body() createCourseDto: CreateCourseDto, @GetAccountContext('_id') accountId: string) {
-    return this.coursesService.create({ ...createCourseDto, accountId });
-  }
-
-  @Patch(':id')
-  @UseGuards(new RolesGuard())
-  updateCourse(@Param('id') id: string, @Body() updateCourseDto: UpdateCourseByIdDto, @GetAccountContext('_id') accountId: string) {
-    return this.coursesService.update(id, { ...updateCourseDto, accountId });
-  }
-
   @Post(':id/checkout')
   @UseGuards(new RolesGuard('admin'))
   checkout(@Param('id') id: string, @GetAccountContext('_id') accountId: string) {
@@ -43,12 +31,26 @@ export class CoursesController {
 
   // mentor
   @Get('my-courses/:courseId')
-  findMyCourseById(@Param('courseId') courseId: string) {
-    return this.coursesService.findById(courseId);
+  @UseGuards(new RolesGuard('admin'))
+  findMyCourseById(@Param('courseId') courseId: string, @GetAccountContext('_id') accountId: string) {
+    return this.coursesService.findMyCourseById({ courseId, accountId });
   }
 
   @Get('my-courses')
-  findMyCourses(@Param('courseId') courseId: string) {
-    return this.coursesService.findById(courseId);
+  @UseGuards(new RolesGuard('admin'))
+  findMyCourses(@GetAccountContext('_id') accountId: string) {
+    return this.coursesService.findMyCourses(accountId);
+  }
+
+  @Post('my-courses')
+  @UseGuards(new RolesGuard('admin'))
+  createCourse(@Body() createCourseDto: CreateCourseDto, @GetAccountContext('_id') accountId: string) {
+    return this.coursesService.create({ ...createCourseDto, accountId });
+  }
+
+  @Patch('my-courses/:id')
+  @UseGuards(new RolesGuard('admin'))
+  updateCourse(@Param('id') id: string, @Body() updateCourseDto: UpdateCourseByIdDto, @GetAccountContext('_id') accountId: string) {
+    return this.coursesService.update(id, { ...updateCourseDto, accountId });
   }
 }

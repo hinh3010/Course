@@ -83,7 +83,7 @@ export class BaseCourseDto {
 
   @IsBoolean()
   @IsOptional()
-  isPublished?: boolean = false;
+  isPublished?: boolean = true;
 
   @IsArray()
   @IsOptional()
