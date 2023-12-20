@@ -8,16 +8,16 @@ const Chapter = new Schema<IChapter>(
     description: { type: String },
     videoUrl: { type: String },
     thumbnail: { type: String },
-    // position: { type: Number, required: true },
-    isPublished: { type: Boolean, default: false },
+    position: { type: Number },
+    isPublished: { type: Boolean, default: true },
     isFree: { type: Boolean, default: false },
     course: { type: Schema.Types.ObjectId, ref: 'Course', required: true },
-    deleted: {
-      type: {
-        deletedAt: { type: Date, default: Date.now() },
-        deletedBy: { type: String }
-      }
-    }
+    // deleted: {
+    //   type: {
+    //     deletedAt: { type: Date, default: Date.now() },
+    //     deletedBy: { type: String }
+    //   }
+    // }
   },
   {
     timestamps: {

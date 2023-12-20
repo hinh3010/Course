@@ -40,4 +40,15 @@ export class CoursesController {
   checkout(@Param('id') id: string, @GetAccountContext('_id') accountId: string) {
     return this.coursesService.checkout({ id, accountId });
   }
+
+  // mentor
+  @Get('my-courses/:courseId')
+  findMyCourseById(@Param('courseId') courseId: string) {
+    return this.coursesService.findById(courseId);
+  }
+
+  @Get('my-courses')
+  findMyCourses(@Param('courseId') courseId: string) {
+    return this.coursesService.findById(courseId);
+  }
 }

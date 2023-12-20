@@ -10,11 +10,11 @@ const Attachment = new Schema<IAttachment>({
   mimetype: { type: String },
   uploader: { type: Schema.Types.ObjectId, required: true, ref: 'Account' },
   course: { type: Schema.Types.ObjectId, required: true, ref: 'Course' },
-  deleted: {
-    type: {
-      deletedAt: { type: Date, default: Date.now() },
-      deletedBy: { type: String }
-    }
-  }
+  // deleted: {
+  //   type: {
+  //     deletedAt: { type: Date, default: Date.now() },
+  //     deletedBy: { type: String }
+  //   }
+  // }
 })
 export default Attachment

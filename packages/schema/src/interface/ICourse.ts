@@ -18,7 +18,7 @@ export interface ICourse {
   mentor: ObjectId
   categories: ObjectId[]
   chapters: ObjectId[]
-  deleted: IDeleted
+  // deleted: IDeleted
 }
 
 export interface ICategory {
@@ -36,7 +36,7 @@ export interface IAttachment {
 
   uploader: ObjectId
   course: ObjectId
-  deleted: IDeleted
+  // deleted: IDeleted
 }
 
 export interface IChapter {
@@ -45,12 +45,12 @@ export interface IChapter {
   description: string
   videoUrl: string
   thumbnail: string
-  // position: number
+  position: number
   isPublished: boolean
   isFree: boolean
 
   course: ObjectId
-  deleted: IDeleted
+  // deleted: IDeleted
 }
 
 export interface IUserProgress {
