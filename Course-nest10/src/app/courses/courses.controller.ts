@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Patch, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Patch, Post, UseGuards } from '@nestjs/common';
 import { GetAccountContext } from 'src/decorators/getAccountContext';
 import { RolesGuard } from 'src/middlewares/authenticate';
 import { CoursesService } from './courses.service';
@@ -13,9 +13,9 @@ export class CoursesController {
     return this.coursesService.findAll();
   }
 
-  @Get(':id')
-  findById(@Param('id') id: string) {
-    return this.coursesService.findById(id);
+  @Get(':courseId')
+  findById(@Param('courseId') courseId: string) {
+    return this.coursesService.findById(courseId);
   }
 
   @Get('slug/:slug')
@@ -23,34 +23,46 @@ export class CoursesController {
     return this.coursesService.findBySlug(slug);
   }
 
-  @Post(':id/checkout')
-  @UseGuards(new RolesGuard('admin'))
-  checkout(@Param('id') id: string, @GetAccountContext('_id') accountId: string) {
-    return this.coursesService.checkout({ id, accountId });
+  @Post(':courseId/checkout')
+  @UseGuards(new RolesGuard())
+  checkout(@Param('courseId') courseId: string, @GetAccountContext('_id') accountId: string) {
+    return this.coursesService.checkout({ courseId, accountId });
   }
 
   // mentor
   @Get('my-courses/:courseId')
-  @UseGuards(new RolesGuard('admin'))
+  @UseGuards(new RolesGuard('mentor'))
   findMyCourseById(@Param('courseId') courseId: string, @GetAccountContext('_id') accountId: string) {
     return this.coursesService.findMyCourseById({ courseId, accountId });
   }
 
+  @Get('my-courses/slug/:slug')
+  @UseGuards(new RolesGuard('mentor'))
+  findMyCourseBySlug(@Param('slug') slug: string, @GetAccountContext('_id') accountId: string) {
+    return this.coursesService.findMyCourseBySlug({ slug, accountId });
+  }
+
   @Get('my-courses')
-  @UseGuards(new RolesGuard('admin'))
+  @UseGuards(new RolesGuard('mentor'))
   findMyCourses(@GetAccountContext('_id') accountId: string) {
     return this.coursesService.findMyCourses(accountId);
   }
 
   @Post('my-courses')
-  @UseGuards(new RolesGuard('admin'))
+  @UseGuards(new RolesGuard('mentor'))
   createCourse(@Body() createCourseDto: CreateCourseDto, @GetAccountContext('_id') accountId: string) {
     return this.coursesService.create({ ...createCourseDto, accountId });
   }
 
-  @Patch('my-courses/:id')
-  @UseGuards(new RolesGuard('admin'))
-  updateCourse(@Param('id') id: string, @Body() updateCourseDto: UpdateCourseByIdDto, @GetAccountContext('_id') accountId: string) {
-    return this.coursesService.update(id, { ...updateCourseDto, accountId });
+  @Patch('my-courses/:courseId')
+  @UseGuards(new RolesGuard('mentor'))
+  deleteCourse(@Param('courseId') courseId: string, @GetAccountContext('_id') accountId: string) {
+    return this.coursesService.deleteCourse({ courseId, accountId });
+  }
+
+  @Delete('my-courses/:courseId')
+  @UseGuards(new RolesGuard('mentor'))
+  updateCourse(@Param('courseId') courseId: string, @Body() updateCourseDto: UpdateCourseByIdDto, @GetAccountContext('_id') accountId: string) {
+    return this.coursesService.update(courseId, { ...updateCourseDto, accountId });
   }
 }

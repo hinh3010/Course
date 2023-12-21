@@ -32,7 +32,7 @@ export class ChaptersController {
   }
 
   @Post()
-  @UseGuards(new RolesGuard('admin'))
+  @UseGuards(new RolesGuard('mentor'))
   createChapterByCourse(
     @Param('courseId') courseId: string,
     @Body() createChapterDto: CreateChapterDto,
@@ -47,8 +47,9 @@ export class ChaptersController {
     return this.chaptersService.createChapterByCourse(payload);
   }
 
+  // mentor
   @Patch(':chapterId')
-  @UseGuards(new RolesGuard('admin'))
+  @UseGuards(new RolesGuard('mentor'))
   updateChapterByCourse(
     @Param('courseId') courseId: string,
     @Param('chapterId') chapterId: string,
@@ -66,7 +67,7 @@ export class ChaptersController {
   }
 
   @Delete(':chapterId')
-  @UseGuards(new RolesGuard('admin'))
+  @UseGuards(new RolesGuard('mentor'))
   deleteChapterByCourse(@Param('courseId') courseId: string, @Param('chapterId') chapterId: string, @GetAccountContext('_id') accountId: string) {
     const payload: ChapterDeleteAction = {
       courseId,
@@ -78,7 +79,7 @@ export class ChaptersController {
   }
 
   @Patch('reorder')
-  @UseGuards(new RolesGuard('admin'))
+  @UseGuards(new RolesGuard('mentor'))
   reorder(@Param('courseId') courseId: string, @Body() chaptersDto: UpdateChapterPositionsDto, @GetAccountContext('_id') accountId: string) {
     const payload: ChapterReorderAction = {
       courseId,
@@ -91,7 +92,7 @@ export class ChaptersController {
 
   // publish
   @Patch(':chapterId/publish')
-  @UseGuards(new RolesGuard('admin'))
+  @UseGuards(new RolesGuard('mentor'))
   publish(@Param('courseId') courseId: string, @Param('chapterId') chapterId: string, @GetAccountContext('_id') accountId: string) {
     const payload: ChapterUpdatePublishAction = {
       courseId,
@@ -104,7 +105,7 @@ export class ChaptersController {
   }
 
   @Patch(':chapterId/unpublish')
-  @UseGuards(new RolesGuard('admin'))
+  @UseGuards(new RolesGuard('mentor'))
   unpublish(@Param('courseId') courseId: string, @Param('chapterId') chapterId: string, @GetAccountContext('_id') accountId: string) {
     const payload: ChapterUpdatePublishAction = {
       courseId,
@@ -118,7 +119,7 @@ export class ChaptersController {
 
   // progress
   @Post(':chapterId/progress')
-  @UseGuards(new RolesGuard('admin'))
+  @UseGuards(new RolesGuard('mentor'))
   progress(
     @Body('isCompleted') isCompleted: boolean,
     @Param('courseId') courseId: string,

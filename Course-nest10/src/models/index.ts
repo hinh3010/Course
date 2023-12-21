@@ -8,8 +8,9 @@ import {
   IPurchaseDocument,
   IUserProgressDocument,
 } from 'src/types';
-import { getModel } from 'src/libs/getDb';
+import { getModel, getConnection } from 'src/libs/getDb';
 
+export const Connection = getConnection();
 export const AccountModel = getModel<IAccountDocument>('Account');
 
 export const AttachmentModel = getModel<IAttachmentDocument>('Attachment');

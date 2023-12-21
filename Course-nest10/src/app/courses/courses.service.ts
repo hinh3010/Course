@@ -66,8 +66,8 @@ export class CoursesService {
     return course;
   }
 
-  async findById(id: string) {
-    const course = await CourseModel.findOne({ _id: id, status: 'active', isPublished: true })
+  async findById(courseId: string) {
+    const course = await CourseModel.findOne({ _id: courseId, status: 'active', isPublished: true })
       .populate({
         path: 'chapters',
         match: { isPublished: true },
@@ -79,18 +79,18 @@ export class CoursesService {
     return course;
   }
 
-  async checkout({ id, accountId }: { id: string; accountId: string }) {
+  async checkout({ courseId, accountId }: { courseId: string; accountId: string }) {
     const course = await CourseModel.findOne({
       status: 'active',
       isPublished: true,
-      _id: id,
+      _id: courseId,
     }).lean();
 
     if (!course) throw new HttpException('Course not found', HttpStatus.NOT_FOUND);
 
     const purchase = await PurchaseModel.findOne({
       account: accountId,
-      course: id,
+      course: courseId,
     });
 
     if (purchase) throw new HttpException('Already purchased', HttpStatus.BAD_REQUEST);
@@ -98,7 +98,7 @@ export class CoursesService {
     return (
       await PurchaseModel.create({
         account: accountId,
-        course: id,
+        course: courseId,
       })
     ).toJSON();
   }
@@ -128,12 +128,12 @@ export class CoursesService {
     return (await CourseModel.create(doc)).toJSON();
   }
 
-  async update(id: string, updateCourseDto: UpdateCourseByIdDto) {
+  async update(courseId: string, updateCourseDto: UpdateCourseByIdDto) {
     const { accountId, categories, title } = updateCourseDto;
 
     const course = await CourseModel.findOne({
       status: 'active',
-      _id: id,
+      _id: courseId,
       mentor: accountId,
     }).lean();
 
@@ -159,7 +159,7 @@ export class CoursesService {
     });
 
     if (Object.keys(update).length) {
-      return await CourseModel.findOneAndUpdate({ _id: id }, { $set: update }, { new: true });
+      return await CourseModel.findOneAndUpdate({ _id: courseId }, { $set: update }, { new: true });
     }
 
     return course;
@@ -189,6 +189,29 @@ export class CoursesService {
         path: 'categories',
       })
       .lean();
+    return course;
+  }
+
+  async findMyCourseBySlug({ slug, accountId }: { slug: string; accountId: string }) {
+    const course = await CourseModel.findOne({ slug: slug, mentor: accountId })
+      .populate({
+        path: 'chapters',
+      })
+      .populate({
+        path: 'categories',
+      })
+      .lean();
+    return course;
+  }
+
+  async deleteCourse({ courseId, accountId }: { courseId: string; accountId: string }) {
+    const course = await CourseModel.findOneAndDelete({
+      _id: courseId,
+      mentor: accountId,
+    }).lean();
+
+    if (!course) throw new HttpException('Course not found', HttpStatus.NOT_FOUND);
+
     return course;
   }
 }

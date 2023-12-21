@@ -10,6 +10,7 @@ import {
   ChapterUpdateProgressAction,
   ChapterUpdatePublishAction,
 } from './types';
+import { withTransaction } from 'src/libs/withTransaction';
 
 @Injectable()
 export class ChaptersService {
@@ -44,7 +45,6 @@ export class ChaptersService {
     const chapters = await ChapterModel.find({
       isPublished: true,
       course: courseId,
-      deleted: { $exists: false },
     })
       .sort({ position: 1 })
       .lean();
@@ -60,7 +60,6 @@ export class ChaptersService {
     const chapter = await ChapterModel.findOne({
       isPublished: true,
       course: courseId,
-      deleted: { $exists: false },
       _id: chapterId,
     }).lean();
 
@@ -102,8 +101,13 @@ export class ChaptersService {
     // const position = lastChapter?.position ? lastChapter?.position + 1 : 1;
     // doc['position'] = position;
 
-    const chapter = await ChapterModel.create(doc);
-    return chapter.toJSON();
+    const chapter = await withTransaction(async (session) => {
+      const [chapter] = await ChapterModel.create([doc], { session });
+      await CourseModel.findOneAndUpdate({ _id: courseId }, { $push: { chapters: chapter._id } }, { session });
+      return chapter;
+    });
+
+    return chapter;
   }
 
   async updateChapterByCourse(payload: ChapterUpdateAction) {
@@ -115,7 +119,6 @@ export class ChaptersService {
     const chapter = await ChapterModel.findOne({
       _id: chapterId,
       course: courseId,
-      deleted: { $exists: false },
     }).lean();
 
     if (!chapter) throw new HttpException('Chapter not found', HttpStatus.NOT_FOUND);
@@ -144,28 +147,17 @@ export class ChaptersService {
     return chapter;
   }
 
+  // mentor
   async deleteChapterByCourse(payload: ChapterDeleteAction) {
     const { courseId, chapterId, accountId } = payload;
 
     const course = await this._getCourseById(courseId);
     if (course.mentor.toString() !== accountId) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
 
-    const chapter = await ChapterModel.findOneAndUpdate(
-      {
-        _id: chapterId,
-        course: courseId,
-        deleted: { $exists: false },
-      },
-      {
-        $set: {
-          deleted: {
-            deletedAt: new Date(Date.now()),
-            deletedBy: accountId,
-          },
-        },
-      },
-      { new: true },
-    ).lean();
+    const chapter = await ChapterModel.findByIdAndDelete({
+      _id: chapterId,
+      course: courseId,
+    }).lean();
 
     if (!chapter) throw new HttpException('Chapter not found', HttpStatus.NOT_FOUND);
     return chapter;
@@ -203,11 +195,7 @@ export class ChaptersService {
     const course = await this._getCourseById(courseId);
     if (course.mentor.toString() !== accountId) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
 
-    const chapter = await ChapterModel.findOneAndUpdate(
-      { _id: chapterId, course: courseId, deleted: { $exists: false } },
-      { $set: { isPublished: isPublished } },
-      { new: true },
-    );
+    const chapter = await ChapterModel.findOneAndUpdate({ _id: chapterId, course: courseId }, { $set: { isPublished: isPublished } }, { new: true });
 
     if (!chapter) throw new HttpException('Chapter not found', HttpStatus.NOT_FOUND);
 
