@@ -6,7 +6,7 @@ import {
     SheetTrigger
 } from "@/components/ui/sheet";
 
-import { Course } from "@/data";
+import { Course } from "@/types";
 import { CourseSidebar } from "./course-sidebar";
 
 interface CourseMobileSidebarProps {

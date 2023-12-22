@@ -1,13 +1,12 @@
-import { SearchInput } from "@/components/search-input";
+import { getServerCategories, getServerCourses } from "@/actions/server-action";
 import { CoursesList } from "@/components/courses-list";
+import { SearchInput } from "@/components/search-input";
+import { Category, Course } from "@/types";
 import { Categories } from "./_components/categories";
-import faker, { Category, Course } from "@/data";
-import { getCourses } from "@/actions/course-action";
-import { getCategories } from "@/actions/category-action";
 
 const CoursesPage = async () => {
-    const categories: Category[] = await getCategories()
-    const courses: Course[] = await getCourses()
+    const categories: Category[] = await getServerCategories()
+    const courses: Course[] = await getServerCourses()
 
     return (
         <>

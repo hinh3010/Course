@@ -8,7 +8,7 @@ import * as z from "zod";
 
 import { FileUpload } from "@/components/file-upload";
 import { Button } from "@/components/ui/button";
-import { Course } from "@/data";
+import { Course } from "@/types";
 
 interface AttachmentFormProps {
     initialData: Course

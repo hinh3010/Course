@@ -6,7 +6,7 @@ import * as z from "zod";
 
 import { FileUpload } from "@/components/file-upload";
 import { Button } from "@/components/ui/button";
-import { Chapter } from "@/data";
+import { Chapter } from "@/types";
 import Plyr from "plyr-react";
 import "plyr-react/plyr.css";
 

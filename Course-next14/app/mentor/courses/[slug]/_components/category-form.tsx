@@ -17,7 +17,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Combobox } from "@/components/ui/combobox";
-import { Course } from "@/data";
+import { Course } from "@/types";
 
 interface CategoryFormProps {
     initialData: Course;

@@ -16,7 +16,7 @@ import {
     FormField,
     FormItem
 } from "@/components/ui/form";
-import { Chapter } from "@/data";
+import { Chapter } from "@/types";
 import { cn } from "@/lib/utils";
 
 interface ChapterAccessFormProps {

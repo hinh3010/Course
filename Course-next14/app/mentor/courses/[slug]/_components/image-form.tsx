@@ -9,7 +9,7 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { FileUpload } from "@/components/file-upload";
-import { Course } from "@/data";
+import { Course } from "@/types";
 
 interface ImageFormProps {
     initialData: Course

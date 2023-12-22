@@ -18,7 +18,7 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { axiosActions } from "@/lib/axios-actions";
 import { useRouter } from "next/navigation";
-import { Course } from "@/data";
+import { Course } from "@/types";
 
 const formSchema = z.object({
     title: z.string().min(8, {

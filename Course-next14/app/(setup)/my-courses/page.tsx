@@ -1,13 +1,32 @@
+'use client'
 import { CoursesList } from "@/components/courses-list";
 import { SearchInput } from "@/components/search-input";
 
-import { getCourses } from "@/actions/course-action";
-import { Course } from "@/data";
+import { getMyCourses } from "@/actions/course-action";
+import { Course } from "@/types";
 import { CheckCircle, Clock } from "lucide-react";
+import { useEffect, useState } from "react";
 import { InfoCard } from "./_components/info-card";
 
-const MyCoursesPage = async () => {
-    const courses: Course[] = await getCourses()
+const MyCoursesPage = () => {
+    const [courses, setCourses] = useState<Course[]>([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState<any>(null);
+
+    useEffect(() => {
+        const fetchCourses = async () => {
+            try {
+                const fetchedCourses = await getMyCourses();
+                setCourses(fetchedCourses);
+            } catch (err) {
+                setError(err);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        fetchCourses();
+    }, []);
 
     return (
         <>
@@ -28,7 +47,13 @@ const MyCoursesPage = async () => {
                         variant="success"
                     />
                 </div>
-                <CoursesList items={courses} />
+                {isLoading ? (
+                    <div>Loading...</div>
+                ) : error ? (
+                    <div>Error: {error.message}</div>
+                ) : (
+                    <CoursesList items={courses} />
+                )}
             </div>
         </>
     );

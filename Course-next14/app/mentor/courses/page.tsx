@@ -1,7 +1,7 @@
 import { getCourses } from "@/actions/course-action";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Course } from "@/data";
+import { Course } from "@/types";
 import { PlusCircle } from "lucide-react";
 import Link from "next/link";
 import { columns } from "./_components/columns";

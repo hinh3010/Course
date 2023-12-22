@@ -10,14 +10,14 @@ const VideoPlayer = dynamic(() => import('./_components/video-player'), {
 
 import { CourseEnrollButton } from "./_components/course-enroll-button";
 import { CourseProgressButton } from "./_components/course-progress-button";
-import faker, { Attachment, Chapter, Course, MuxData, Purchase, UserProgress } from "@/data";
+import faker, { Attachment, Chapter, Course, MuxData, Purchase, UserProgress } from "@/types";
 import dynamic from "next/dynamic";
 import { getCourseBySlug } from "@/actions/course-action";
 
 const ChapterIdPage = async ({
     params
 }: {
-        params: { slug: string; chapterId: string }
+    params: { slug: string; chapterId: string }
 }) => {
     const course: Course = await getCourseBySlug(params.slug)
     const purchase: Purchase = faker.purchases[0]

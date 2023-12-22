@@ -18,7 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
-import { Course } from "@/data";
+import { Course } from "@/types";
 import { ChaptersList } from "./chapters-list";
 
 interface ChaptersFormProps {

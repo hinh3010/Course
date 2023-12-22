@@ -18,7 +18,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Textarea } from "@/components/ui/textarea";
-import { Course } from "@/data";
+import { Course } from "@/types";
 
 interface DescriptionFormProps {
     initialData: Course;

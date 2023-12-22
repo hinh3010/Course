@@ -11,7 +11,7 @@ import { PriceForm } from "./_components/price-form";
 import { AttachmentForm } from "./_components/attachment-form";
 import { ChaptersForm } from "./_components/chapters-form";
 import { Actions } from "./_components/actions";
-import { Category, Course } from "@/data";
+import { Category, Course } from "@/types";
 import { getCourseBySlug } from "@/actions/course-action";
 import { getCategories } from "@/actions/category-action";
 

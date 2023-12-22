@@ -68,6 +68,7 @@ export class ChaptersService {
     return chapter;
   }
 
+  // mentor
   async createChapterByCourse(payload: ChapterCreateAction) {
     const { courseId, createChapterDto, accountId } = payload;
 
@@ -147,19 +148,24 @@ export class ChaptersService {
     return chapter;
   }
 
-  // mentor
   async deleteChapterByCourse(payload: ChapterDeleteAction) {
     const { courseId, chapterId, accountId } = payload;
 
     const course = await this._getCourseById(courseId);
     if (course.mentor.toString() !== accountId) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
 
-    const chapter = await ChapterModel.findByIdAndDelete({
+    const chapter = await ChapterModel.exists({
       _id: chapterId,
       course: courseId,
     }).lean();
 
     if (!chapter) throw new HttpException('Chapter not found', HttpStatus.NOT_FOUND);
+
+    await withTransaction(async (session) => {
+      await ChapterModel.deleteOne({ _id: chapterId }, { session });
+      await CourseModel.findOneAndUpdate({ _id: courseId }, { $pull: { chapters: chapterId } }, { session });
+    });
+
     return chapter;
   }
 

@@ -1,6 +1,6 @@
 'use client'
 import { CourseCard } from "@/components/course-card";
-import { Course } from "@/data";
+import { Course } from "@/types";
 
 type CourseWithProgressWithCategory = Course
 

@@ -18,7 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { axiosActions } from "@/lib/axios-actions";
-import { Course } from "@/data";
+import { Course } from "@/types";
 
 interface TitleFormProps {
     course: Course

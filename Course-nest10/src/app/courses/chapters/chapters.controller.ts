@@ -12,16 +12,16 @@ import {
   ChapterUpdatePublishAction,
 } from './types';
 
-@Controller('courses/:courseId/chapters')
+@Controller()
 export class ChaptersController {
   constructor(private readonly chaptersService: ChaptersService) {}
 
-  @Get()
+  @Get('courses/:courseId/chapters')
   findAllChaptersByCourse(@Param('courseId') courseId: string) {
     return this.chaptersService.findAllChaptersByCourse(courseId);
   }
 
-  @Get(':chapterId')
+  @Get('courses/:courseId/chapters:chapterId')
   findChapterByCourse(@Param('courseId') courseId: string, @Param('chapterId') chapterId: string) {
     const payload = {
       courseId,
@@ -31,7 +31,8 @@ export class ChaptersController {
     return this.chaptersService.findChapterByCourse(payload);
   }
 
-  @Post()
+  // mentor
+  @Post('mentor/courses/:courseId/chapters')
   @UseGuards(new RolesGuard('mentor'))
   createChapterByCourse(
     @Param('courseId') courseId: string,
@@ -47,8 +48,7 @@ export class ChaptersController {
     return this.chaptersService.createChapterByCourse(payload);
   }
 
-  // mentor
-  @Patch(':chapterId')
+  @Patch('mentor/courses/:courseId/chapters:chapterId')
   @UseGuards(new RolesGuard('mentor'))
   updateChapterByCourse(
     @Param('courseId') courseId: string,
@@ -66,7 +66,7 @@ export class ChaptersController {
     return this.chaptersService.updateChapterByCourse(payload);
   }
 
-  @Delete(':chapterId')
+  @Delete('mentor/courses/:courseId/chapters/:chapterId')
   @UseGuards(new RolesGuard('mentor'))
   deleteChapterByCourse(@Param('courseId') courseId: string, @Param('chapterId') chapterId: string, @GetAccountContext('_id') accountId: string) {
     const payload: ChapterDeleteAction = {
@@ -78,7 +78,7 @@ export class ChaptersController {
     return this.chaptersService.deleteChapterByCourse(payload);
   }
 
-  @Patch('reorder')
+  @Patch('mentor/courses/:courseId/chapters/reorder')
   @UseGuards(new RolesGuard('mentor'))
   reorder(@Param('courseId') courseId: string, @Body() chaptersDto: UpdateChapterPositionsDto, @GetAccountContext('_id') accountId: string) {
     const payload: ChapterReorderAction = {
@@ -90,8 +90,7 @@ export class ChaptersController {
     return this.chaptersService.reorder(payload);
   }
 
-  // publish
-  @Patch(':chapterId/publish')
+  @Patch('mentor/courses/:courseId/chapters/:chapterId/publish')
   @UseGuards(new RolesGuard('mentor'))
   publish(@Param('courseId') courseId: string, @Param('chapterId') chapterId: string, @GetAccountContext('_id') accountId: string) {
     const payload: ChapterUpdatePublishAction = {
@@ -104,7 +103,7 @@ export class ChaptersController {
     return this.chaptersService.changePublish(payload);
   }
 
-  @Patch(':chapterId/unpublish')
+  @Patch('mentor/courses/:courseId/chapters/:chapterId/unpublish')
   @UseGuards(new RolesGuard('mentor'))
   unpublish(@Param('courseId') courseId: string, @Param('chapterId') chapterId: string, @GetAccountContext('_id') accountId: string) {
     const payload: ChapterUpdatePublishAction = {
@@ -117,9 +116,9 @@ export class ChaptersController {
     return this.chaptersService.changePublish(payload);
   }
 
-  // progress
-  @Post(':chapterId/progress')
-  @UseGuards(new RolesGuard('mentor'))
+  // user progress
+  @Post('mentor/courses/:courseId/chapters/:chapterId/progress')
+  @UseGuards(new RolesGuard('user'))
   progress(
     @Body('isCompleted') isCompleted: boolean,
     @Param('courseId') courseId: string,

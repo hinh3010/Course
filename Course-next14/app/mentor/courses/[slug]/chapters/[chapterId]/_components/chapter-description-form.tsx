@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Editor } from "@/components/editor";
 import { Preview } from "@/components/preview";
-import { Chapter } from "@/data";
+import { Chapter } from "@/types";
 import { useForm } from "react-hook-form";
 
 interface ChapterDescriptionFormProps {

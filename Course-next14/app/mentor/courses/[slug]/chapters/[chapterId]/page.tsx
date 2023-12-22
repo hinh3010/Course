@@ -12,7 +12,7 @@ const ChapterVideoForm = dynamic(() => import('./_components/chapter-video-form'
 });
 
 import { ChapterActions } from "./_components/chapter-actions";
-import faker, { Chapter } from "@/data";
+import faker, { Chapter } from "@/types";
 import dynamic from "next/dynamic";
 
 const ChapterIdPage = async ({

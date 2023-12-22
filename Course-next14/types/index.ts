@@ -22,18 +22,8 @@ export type Category = {
     updatedAt: string;
 };
 
-export interface Attachment {
-    id: string;
-    name: string;
-    url: string;
-    courseId: string;
-    course?: Course | null;
-    createdAt: Date;
-    updatedAt: Date;
-}
-
 export interface Chapter {
-    id: string;
+    _id: string;
     title: string;
     description?: string | null;
     videoUrl?: string | null;
@@ -44,6 +34,16 @@ export interface Chapter {
     courseId: string;
     course?: Course | null;
     userProgress?: UserProgress[];
+    createdAt: Date;
+    updatedAt: Date;
+}
+
+export interface Attachment {
+    id: string;
+    name: string;
+    url: string;
+    courseId: string;
+    course?: Course | null;
     createdAt: Date;
     updatedAt: Date;
 }
@@ -95,14 +95,14 @@ type FakerData = {
 };
 
 const faker: FakerData = {
-    courses: require("./courses.json"),
-    attachments: require("./attachment.json"),
-    categories: require("./categories.json"),
-    chapters: require("./chapter.json"),
-    muxData: require("./mux-data.json"),
-    purchases: require("./purchase.json"),
-    stripeCustomers: require("./stripe-customer.json"),
-    userProgresses: require("./user-progress.json"),
+    courses: require('./courses.json'),
+    attachments: require('./attachment.json'),
+    categories: require('./categories.json'),
+    chapters: require('./chapter.json'),
+    muxData: require('./mux-data.json'),
+    purchases: require('./purchase.json'),
+    stripeCustomers: require('./stripe-customer.json'),
+    userProgresses: require('./user-progress.json'),
 };
 
 export default faker;
