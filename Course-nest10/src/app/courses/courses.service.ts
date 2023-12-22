@@ -214,4 +214,38 @@ export class CoursesService {
 
     return course;
   }
+
+  // user
+  async myCourses({ accountId }: { accountId: string }) {
+    const courseIds = await PurchaseModel.distinct('course', { account: accountId });
+
+    const courses = await CourseModel.find({
+      $or: [{ _id: { $in: courseIds }, status: 'active', isPublished: true }, { mentor: accountId }],
+    })
+      .populate({
+        path: 'categories',
+      })
+      .lean();
+
+    return courses;
+  }
+
+  async myCourseBySlug({ accountId, slug }: { accountId: string; slug: string }) {
+    const courseIds = await PurchaseModel.distinct('course', { account: accountId });
+
+    const course = await CourseModel.findOne({
+      slug: slug,
+      $or: [{ _id: { $in: courseIds }, status: 'active', isPublished: true }, { mentor: accountId }],
+    })
+      .populate({
+        path: 'chapters',
+      })
+      .populate({
+        path: 'categories',
+      })
+      .lean();
+
+    if (!course) throw new HttpException('Course not found', HttpStatus.NOT_FOUND);
+    return course;
+  }
 }

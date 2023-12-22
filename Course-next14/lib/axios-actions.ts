@@ -9,16 +9,16 @@ class AxiosActions {
             baseURL,
             timeout: 5000,
             headers: {
-                "Content-Type": "application/json",
-                "Cache-Control": "no-cache, no-store, must-revalidate",
-                "Pragma": "no-cache",
-                "Expires": 0,
+                'Content-Type': 'application/json',
+                'Cache-Control': 'no-cache, no-store, must-revalidate',
+                Pragma: 'no-cache',
+                Expires: 0,
             },
         });
 
         this.instance.interceptors.request.use(
             (config) => {
-                const token = storage.get('token')
+                const token = storage.get('token');
                 if (token) {
                     config.headers.Authorization = `Bearer ${token}`;
                 }
@@ -27,16 +27,16 @@ class AxiosActions {
             },
             (error) => {
                 return Promise.reject(error);
-            }
+            },
         );
 
         this.instance.interceptors.response.use(
             (response: AxiosResponse) => {
-                return (response && response.data) ? response.data : response;
+                return response && response.data ? response.data : response;
             },
             (error: AxiosError) => {
                 return Promise.reject(error);
-            }
+            },
         );
     }
 

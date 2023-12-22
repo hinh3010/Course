@@ -1,10 +1,18 @@
-// 'use server'
-import { fetchActions } from "@/lib/fetch-actions";
+import { axiosActions } from "@/lib/axios-actions";
+import { Course } from "@/types";
 
-export const getCourses = async () => {
-    return await fetchActions.get('courses')
+export const getCourses = async (): Promise<Course[]> => {
+    return await axiosActions.get('courses')
 };
 
 export const getCourseBySlug = async (slug: string) => {
-    return await fetchActions.get(`courses/slug/${slug}`)
+    return await axiosActions.get(`courses/slug/${slug}`)
+};
+
+export const getMyCourses = async (): Promise<Course[]> => {
+    return await axiosActions.get('my-courses')
+};
+
+export const getMyCourseBySlug = async (slug: string): Promise<Course> => {
+    return await axiosActions.get(`my-courses/${slug}`)
 };
