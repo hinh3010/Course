@@ -1,3 +1,4 @@
+'use client';
 import toast from 'react-hot-toast';
 
 class LocalStorage {
@@ -7,18 +8,17 @@ class LocalStorage {
         return `${this.prefix}-${key}`;
     }
 
-    public get(key: string): string | undefined {
+    public get(key: string): any {
         try {
             const formattedKey = this.formatKey(key);
-            const serializedData = localStorage.getItem(formattedKey);
+            const serializedData = localStorage?.getItem(formattedKey);
             if (serializedData === null) {
-                return undefined;
+                return null;
             }
             return JSON.parse(serializedData);
         } catch (error: any) {
-            console.log('🚀 ~ file: storage-actions.ts:19 ~ LocalStorage ~ get ~ error:', error);
-            // toast.error(error.message, { position: 'top-right' });
-            return undefined;
+            toast.error(error.message, { position: 'top-right' });
+            return null;
         }
     }
 
@@ -26,7 +26,7 @@ class LocalStorage {
         try {
             const serializedData = JSON.stringify(data);
             const formattedKey = this.formatKey(key);
-            localStorage.setItem(formattedKey, serializedData);
+            localStorage?.setItem(formattedKey, serializedData);
         } catch (error: any) {
             toast.error(error.message, { position: 'top-right' });
         }
@@ -35,7 +35,7 @@ class LocalStorage {
     public remove(key: string) {
         try {
             const formattedKey = this.formatKey(key);
-            localStorage.removeItem(formattedKey);
+            localStorage?.removeItem(formattedKey);
         } catch (error: any) {
             toast.error(error.message, { position: 'top-right' });
         }

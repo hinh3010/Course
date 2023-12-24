@@ -128,7 +128,7 @@ export class CoursesService {
     return (await CourseModel.create(doc)).toJSON();
   }
 
-  async update(courseId: string, updateCourseDto: UpdateCourseByIdDto) {
+  async updateCourse(courseId: string, updateCourseDto: UpdateCourseByIdDto) {
     const { accountId, categories, title } = updateCourseDto;
 
     const course = await CourseModel.findOne({
@@ -165,13 +165,10 @@ export class CoursesService {
     return course;
   }
 
-  async findMyCourses(accountId: string) {
+  async getCoursesByMentor(accountId: string) {
     const courses = await CourseModel.find({
       mentor: accountId,
     })
-      .populate({
-        path: 'chapters',
-      })
       .populate({
         path: 'categories',
       })
@@ -180,19 +177,7 @@ export class CoursesService {
     return courses;
   }
 
-  async findMyCourseById({ courseId, accountId }: { courseId: string; accountId: string }) {
-    const course = await CourseModel.findOne({ _id: courseId, mentor: accountId })
-      .populate({
-        path: 'chapters',
-      })
-      .populate({
-        path: 'categories',
-      })
-      .lean();
-    return course;
-  }
-
-  async findMyCourseBySlug({ slug, accountId }: { slug: string; accountId: string }) {
+  async getCourseByMentor({ slug, accountId }: { slug: string; accountId: string }) {
     const course = await CourseModel.findOne({ slug: slug, mentor: accountId })
       .populate({
         path: 'chapters',

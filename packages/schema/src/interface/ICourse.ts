@@ -35,7 +35,6 @@ export interface IAttachment {
   mimetype: string
 
   uploader: ObjectId
-  course: ObjectId
   // deleted: IDeleted
 }
 

@@ -3,9 +3,10 @@
         "id": "1",
         "title": "Getting Started with HTML",
         "description": "Introduction to HTML basics.",
-        "videoUrl": "https://res.cloudinary.com/dqmv3pllu/video/upload/v1700285119/pexels_videos_wzzvuq.mp4",
+        "videoUrl": "https://res.cloudinary.com/dqmv3pllu/video/upload/v1703317540/188778_720p_hrfgmt.mp4",
         "position": 1,
         "isPublished": true,
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1200px-Nuxt_logo.svg.png",
         "isFree": true,
         "courseId": "1",
         "course": {

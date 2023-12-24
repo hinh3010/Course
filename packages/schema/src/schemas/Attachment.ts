@@ -8,8 +8,7 @@ const Attachment = new Schema<IAttachment>({
   type: { type: String },
   size: { type: Number },
   mimetype: { type: String },
-  uploader: { type: Schema.Types.ObjectId, required: true, ref: 'Account' },
-  course: { type: Schema.Types.ObjectId, required: true, ref: 'Course' },
+  uploader: { type: Schema.Types.ObjectId, required: true, ref: 'Account' }
   // deleted: {
   //   type: {
   //     deletedAt: { type: Date, default: Date.now() },

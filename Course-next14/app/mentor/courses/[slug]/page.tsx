@@ -1,137 +1,115 @@
-import { CircleDollarSign, File, LayoutDashboard, ListChecks } from "lucide-react";
+'use client';
+import { CircleDollarSign, File, LayoutDashboard, ListChecks } from 'lucide-react';
 
-import { IconBadge } from "@/components/icon-badge";
-import { Banner } from "@/components/banner";
+import { IconBadge } from '@/components/icon-badge';
+import { Banner } from '@/components/banner';
 
-import { TitleForm } from "./_components/title-form";
-import { DescriptionForm } from "./_components/description-form";
-import { ImageForm } from "./_components/image-form";
-import { CategoryForm } from "./_components/category-form";
-import { PriceForm } from "./_components/price-form";
-import { AttachmentForm } from "./_components/attachment-form";
-import { ChaptersForm } from "./_components/chapters-form";
-import { Actions } from "./_components/actions";
-import { Category, Course } from "@/types";
-import { getCourseBySlug } from "@/actions/course-action";
-import { getCategories } from "@/actions/category-action";
+import { TitleForm } from './_components/title-form';
+import { DescriptionForm } from './_components/description-form';
+import { ImageForm } from './_components/image-form';
+import { PriceForm } from './_components/price-form';
+import { AttachmentForm } from './_components/attachment-form';
+import { ChaptersForm } from './_components/chapters-form';
+import { Actions } from './_components/actions';
+import { Course } from '@/types';
+import { getCourseByMentor } from '@/actions/course-action';
+import { useEffect, useMemo, useState } from 'react';
+import toast from 'react-hot-toast';
+import { LoadingProvider } from '@/components/providers/loading-provider';
 
-const CourseIdPage = async ({
-    params
-}: {
-    params: { slug: string }
-}) => {
-    const course: Course = await getCourseBySlug(params.slug)
-    const categories: Category[] = await getCategories()
+const CourseIdPage = ({ params }: { params: { slug: string } }) => {
+    const [course, setCourse] = useState<Course | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
 
-    const requiredFields = [
-        course.title,
-        course.description,
-        course.thumbnail,
-        course.basePrice,
-        course.categories,
-        course.chapters?.some((chapter) => chapter.isPublished),
-    ];
+    useEffect(() => {
+        const fetchCourses = async () => {
+            try {
+                const fetchedCourses = await getCourseByMentor(params.slug);
+                setCourse(fetchedCourses);
+            } catch (err: any) {
+                toast.error(err.message);
+            } finally {
+                setIsLoading(false);
+            }
+        };
 
-    const totalFields = requiredFields.length;
-    const completedFields = requiredFields.filter(Boolean).length;
+        fetchCourses();
+    }, [params.slug]);
 
-    const completionText = `(${completedFields}/${totalFields})`;
+    const { isComplete, completionText } = useMemo(() => {
+        const { title, description, thumbnail, basePrice, categories, chapters } = course || {};
+        const chapterIsPublished = chapters?.some((chapter) => chapter.isPublished);
 
-    const isComplete = requiredFields.every(Boolean);
+        const requiredFields = [title, description, thumbnail, basePrice, categories, chapterIsPublished];
+        const totalFields = requiredFields.length;
+        const completedFields = requiredFields.filter((field) => field).length;
+
+        const completionText = `(${completedFields}/${totalFields})`;
+
+        const isComplete = requiredFields.every((field) => field);
+
+        return { isComplete, completionText };
+    }, [course]);
 
     return (
-        <>
-            {!course.isPublished && (
-                <Banner
-                    label="This course is unpublished. It will not be visible to the students."
-                />
-            )}
-            <div className="p-6">
-                <div className="flex items-center justify-between">
-                    <div className="flex flex-col gap-y-2">
-                        <h1 className="text-2xl font-medium">
-                            Course setup
-                        </h1>
-                        <span className="text-sm text-slate-700">
-                            Complete all fields {completionText}
-                        </span>
+        <LoadingProvider isLoading={isLoading}>
+            {!course?.isPublished && <Banner label="This course is unpublished. It will not be visible to the students." />}
+            {course && (
+                <div className="p-6">
+                    <div className="flex items-center justify-between">
+                        <div className="flex flex-col gap-y-2">
+                            <h1 className="text-2xl font-medium">Course setup</h1>
+                            <span className="text-sm text-slate-700">Complete all fields {completionText}</span>
+                        </div>
+                        <Actions disabled={!isComplete} courseId={course._id} isPublished={course.isPublished} />
                     </div>
-                    <Actions
-                        disabled={!isComplete}
-                        courseId={params.slug}
-                        isPublished={course.isPublished}
-                    />
-                </div>
 
-                <div className="grid grid-cols-1 gap-6 mt-16">
-                    <div>
-                        <div className="flex items-center gap-x-2">
-                            <IconBadge icon={LayoutDashboard} />
-                            <h2 className="text-xl">
-                                Customize your course
-                            </h2>
-                        </div>
-                        <TitleForm
-                            course={course}
-                        />
-                        <DescriptionForm
-                            initialData={course}
-                            courseId={course._id}
-                        />
-                        <ImageForm
-                            initialData={course}
-                        />
-                        {/* <CategoryForm
-                            initialData={course}
-                            courseId={course._id}
-                            options={categories.map((category) => ({
-                                label: category.name,
-                                value: category._id,
-                            }))}
-                        /> */}
-                    </div>
-                    <div className="space-y-6">
+                    <div className="grid grid-cols-1 gap-6 mt-16">
                         <div>
                             <div className="flex items-center gap-x-2">
-                                <IconBadge icon={ListChecks} />
-                                <h2 className="text-xl">
-                                    Course chapters
-                                </h2>
+                                <IconBadge icon={LayoutDashboard} />
+                                <h2 className="text-xl">Customize your course</h2>
                             </div>
-                            <ChaptersForm
+                            <TitleForm initialData={course} />
+                            <DescriptionForm initialData={course} />
+                            <ImageForm initialData={course} />
+                            {/* <CategoryForm
                                 initialData={course}
                                 courseId={course._id}
-                            />
+                                options={categories.map((category) => ({
+                                    label: category.name,
+                                    value: category._id,
+                                }))}
+                            /> */}
                         </div>
-                        <div>
-                            <div className="flex items-center gap-x-2">
-                                <IconBadge icon={CircleDollarSign} />
-                                <h2 className="text-xl">
-                                    Sell your course
-                                </h2>
+                        <div className="space-y-6">
+                            <div>
+                                <div className="flex items-center gap-x-2">
+                                    <IconBadge icon={ListChecks} />
+                                    <h2 className="text-xl">Course chapters</h2>
+                                </div>
+                                <ChaptersForm initialData={course} courseId={course._id} />
                             </div>
-                            <PriceForm
-                                initialData={course}
-                                courseId={course._id}
-                            />
-                        </div>
-                        <div>
-                            <div className="flex items-center gap-x-2">
-                                <IconBadge icon={File} />
-                                <h2 className="text-xl">
-                                    Resources & Attachments
-                                </h2>
+                            <div>
+                                <div className="flex items-center gap-x-2">
+                                    <IconBadge icon={CircleDollarSign} />
+                                    <h2 className="text-xl">Sell your course</h2>
+                                </div>
+                                <PriceForm initialData={course} />
                             </div>
-                            <AttachmentForm
-                                initialData={course}
-                                courseId={course._id}
-                            />
+                            <div>
+                                <div className="flex items-center gap-x-2">
+                                    <IconBadge icon={File} />
+                                    <h2 className="text-xl">Resources & Attachments</h2>
+                                </div>
+                                {/* <AttachmentForm initialData={course} /> */}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </>
+            )}
+        </LoadingProvider>
     );
-}
+};
 
 export default CourseIdPage;

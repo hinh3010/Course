@@ -1,38 +1,29 @@
-"use client";
+'use client';
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Pencil } from "lucide-react";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import toast from "react-hot-toast";
-import * as z from "zod";
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Pencil } from 'lucide-react';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
+import * as z from 'zod';
 
-import { Button } from "@/components/ui/button";
-import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Course } from "@/types";
-import { formatPrice } from "@/lib/format";
-import { cn } from "@/lib/utils";
+import { updateCourse } from '@/actions/course-action';
+import { Button } from '@/components/ui/button';
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { formatPrice } from '@/lib/format';
+import { cn } from '@/lib/utils';
+import { Course } from '@/types';
 
 interface PriceFormProps {
     initialData: Course;
-    courseId: string;
-};
+}
 
 const formSchema = z.object({
-    price: z.coerce.number(),
+    basePrice: z.coerce.number(),
 });
 
-export const PriceForm = ({
-    initialData,
-    courseId
-}: PriceFormProps) => {
+export const PriceForm = ({ initialData }: PriceFormProps) => {
     const [isEditing, setIsEditing] = useState(false);
 
     const toggleEdit = () => setIsEditing((current) => !current);
@@ -40,7 +31,7 @@ export const PriceForm = ({
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            price: initialData?.basePrice || 0,
+            basePrice: initialData?.basePrice || 0,
         },
     });
 
@@ -48,13 +39,15 @@ export const PriceForm = ({
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
-            toast.success("Course updated");
+            if (values.basePrice === initialData.basePrice) return;
+
+            await updateCourse(initialData._id, values);
+            toast.success('Course updated successfully');
             toggleEdit();
         } catch {
-            toast.error("Something went wrong");
+            toast.error('Something went wrong');
         }
-    }
-
+    };
     return (
         <div className="mt-6 border bg-slate-100 rounded-md p-4">
             <div className="font-medium flex items-center justify-between">
@@ -71,25 +64,16 @@ export const PriceForm = ({
                 </Button>
             </div>
             {!isEditing && (
-                <p className={cn(
-                    "text-sm mt-2",
-                    !initialData.basePrice && "text-slate-500 italic"
-                )}>
-                    {initialData.basePrice
-                        ? formatPrice(initialData.basePrice)
-                        : "Free"
-                    }
+                <p className={cn('text-sm mt-2', !initialData.basePrice && 'text-slate-500 italic')}>
+                    {initialData.basePrice ? formatPrice(initialData.basePrice) : 'Free'}
                 </p>
             )}
             {isEditing && (
                 <Form {...form}>
-                    <form
-                        onSubmit={form.handleSubmit(onSubmit)}
-                        className="space-y-4 mt-4"
-                    >
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 mt-4">
                         <FormField
                             control={form.control}
-                            name="price"
+                            name="basePrice"
                             render={({ field }) => (
                                 <FormItem>
                                     <FormControl>
@@ -106,10 +90,7 @@ export const PriceForm = ({
                             )}
                         />
                         <div className="flex items-center gap-x-2">
-                            <Button
-                                disabled={!isValid || isSubmitting}
-                                type="submit"
-                            >
+                            <Button disabled={!isValid || isSubmitting} type="submit">
                                 Save
                             </Button>
                         </div>
@@ -117,5 +98,5 @@ export const PriceForm = ({
                 </Form>
             )}
         </div>
-    )
-}
+    );
+};

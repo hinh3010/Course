@@ -43,22 +43,16 @@ export class CoursesController {
   }
 
   // mentor
-  @Get('mentor/courses/:courseId')
+  @Get('mentor/courses/:slug')
   @UseGuards(new RolesGuard('mentor'))
-  findMyCourseById(@Param('courseId') courseId: string, @GetAccountContext('_id') accountId: string) {
-    return this.coursesService.findMyCourseById({ courseId, accountId });
-  }
-
-  @Get('mentor/courses/slug/:slug')
-  @UseGuards(new RolesGuard('mentor'))
-  findMyCourseBySlug(@Param('slug') slug: string, @GetAccountContext('_id') accountId: string) {
-    return this.coursesService.findMyCourseBySlug({ slug, accountId });
+  getCourseByMentor(@Param('slug') slug: string, @GetAccountContext('_id') accountId: string) {
+    return this.coursesService.getCourseByMentor({ slug, accountId });
   }
 
   @Get('mentor/courses')
   @UseGuards(new RolesGuard('mentor'))
-  findMyCourses(@GetAccountContext('_id') accountId: string) {
-    return this.coursesService.findMyCourses(accountId);
+  getCoursesByMentor(@GetAccountContext('_id') accountId: string) {
+    return this.coursesService.getCoursesByMentor(accountId);
   }
 
   @Post('mentor/courses')
@@ -67,15 +61,15 @@ export class CoursesController {
     return this.coursesService.create({ ...createCourseDto, accountId });
   }
 
-  @Patch('mentor/courses/:courseId')
+  @Delete('mentor/courses/:courseId')
   @UseGuards(new RolesGuard('mentor'))
   deleteCourse(@Param('courseId') courseId: string, @GetAccountContext('_id') accountId: string) {
     return this.coursesService.deleteCourse({ courseId, accountId });
   }
 
-  @Delete('mentor/courses/:courseId')
+  @Patch('mentor/courses/:courseId')
   @UseGuards(new RolesGuard('mentor'))
   updateCourse(@Param('courseId') courseId: string, @Body() updateCourseDto: UpdateCourseByIdDto, @GetAccountContext('_id') accountId: string) {
-    return this.coursesService.update(courseId, { ...updateCourseDto, accountId });
+    return this.coursesService.updateCourse(courseId, { ...updateCourseDto, accountId });
   }
 }

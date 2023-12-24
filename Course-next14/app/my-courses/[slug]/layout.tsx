@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { CourseSidebar } from './_components/course-sidebar';
 import { useRouter, usePathname, redirect } from 'next/navigation';
+import { LoadingProvider } from '@/components/providers/loading-provider';
 
 const CourseLayout = ({ children, params }: { children: React.ReactNode; params: { slug: string } }) => {
     const router = useRouter();
@@ -38,7 +39,9 @@ const CourseLayout = ({ children, params }: { children: React.ReactNode; params:
     return (
         <div className="h-full w-full">
             <div className="grid grid-cols-4">
-                <main className="col-span-4 xl:col-span-3 flex-1">{isLoading ? <div>Loading...</div> : children}</main>
+                <main className="col-span-4 xl:col-span-3 flex-1">
+                    <LoadingProvider isLoading={isLoading}>{children}</LoadingProvider>
+                </main>
                 <div className="col-span-4 xl:col-span-1 flex-col">{course && <CourseSidebar course={course} progressCount={progressCount} />}</div>
             </div>
         </div>

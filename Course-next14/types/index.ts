@@ -22,27 +22,45 @@ export type Category = {
     updatedAt: string;
 };
 
+export interface IAccount {
+    accountId: string;
+    displayName: string;
+    email: string;
+    password: string;
+    phoneNumber: string;
+
+    roles: ['user', 'admin', 'super_admin', 'mentor'];
+    accountType: 'account' | 'facebook' | 'google';
+    status: 'active' | 'banned';
+    avatarUrl: string;
+    coverImageUrl: string;
+}
+
 export interface Chapter {
     _id: string;
+    slug: string;
     title: string;
     description?: string | null;
     videoUrl?: string | null;
+    thumbnail: string;
     position: number;
     isPublished: boolean;
     isFree: boolean;
-    muxData?: MuxData | null;
-    courseId: string;
     course?: Course | null;
-    userProgress?: UserProgress[];
     createdAt: Date;
     updatedAt: Date;
 }
 
 export interface Attachment {
     id: string;
-    name: string;
-    url: string;
-    courseId: string;
+    filename: string;
+    fileUrl: string;
+    mimetype: string;
+    filePath: string;
+    type: 'image' | 'video' | 'audio' | 'document';
+    size: number;
+
+    uploader?: null;
     course?: Course | null;
     createdAt: Date;
     updatedAt: Date;

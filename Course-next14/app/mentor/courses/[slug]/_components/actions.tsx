@@ -1,24 +1,21 @@
-"use client";
+'use client';
 
-import { Trash } from "lucide-react";
-import { useState } from "react";
-import toast from "react-hot-toast";
-import { useRouter } from "next/navigation";
+import { Trash } from 'lucide-react';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
+import { useRouter } from 'next/navigation';
 
-import { Button } from "@/components/ui/button";
-import { ConfirmModal } from "@/components/modals/confirm-modal";
-import { useConfettiStore } from "@/hooks/use-confetti-store";
+import { Button } from '@/components/ui/button';
+import { ConfirmModal } from '@/components/modals/confirm-modal';
+import { useConfettiStore } from '@/hooks/use-confetti-store';
 
 interface ActionsProps {
     disabled: boolean;
     courseId: string;
     isPublished: boolean;
-};
+}
 
-export const Actions = ({
-    disabled,
-    isPublished
-}: ActionsProps) => {
+export const Actions = ({ disabled, isPublished }: ActionsProps) => {
     const router = useRouter();
     const confetti = useConfettiStore();
     const [isLoading, setIsLoading] = useState(false);
@@ -28,41 +25,36 @@ export const Actions = ({
             setIsLoading(true);
 
             if (isPublished) {
-                toast.success("Course unpublished");
+                toast.success('Course unpublished');
             } else {
-                toast.success("Course published");
+                toast.success('Course published');
                 confetti.onOpen();
             }
 
             router.refresh();
         } catch {
-            toast.error("Something went wrong");
+            toast.error('Something went wrong');
         } finally {
             setIsLoading(false);
         }
-    }
+    };
 
     const onDelete = async () => {
         try {
             setIsLoading(true);
-            toast.success("Course deleted");
+            toast.success('Course deleted');
             router.refresh();
         } catch {
-            toast.error("Something went wrong");
+            toast.error('Something went wrong');
         } finally {
             setIsLoading(false);
         }
-    }
+    };
 
     return (
         <div className="flex items-center gap-x-2">
-            <Button
-                onClick={onClick}
-                disabled={disabled || isLoading}
-                variant="outline"
-                size="sm"
-            >
-                {isPublished ? "Unpublish" : "Publish"}
+            <Button onClick={onClick} disabled={disabled || isLoading} variant="outline" size="sm">
+                {isPublished ? 'Unpublished' : 'Publish'}
             </Button>
             <ConfirmModal onConfirm={onDelete}>
                 <Button size="sm" disabled={isLoading}>
@@ -70,5 +62,5 @@ export const Actions = ({
                 </Button>
             </ConfirmModal>
         </div>
-    )
-}
+    );
+};
