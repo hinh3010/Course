@@ -11,21 +11,25 @@ import { PriceForm } from './_components/price-form';
 import { AttachmentForm } from './_components/attachment-form';
 import { ChaptersForm } from './_components/chapters-form';
 import { Actions } from './_components/actions';
-import { Course } from '@/types';
+import { Category, Course } from '@/types';
 import { getCourseByMentor } from '@/actions/course-action';
 import { useEffect, useMemo, useState } from 'react';
 import toast from 'react-hot-toast';
 import { LoadingProvider } from '@/components/providers/loading-provider';
+import { CategoryForm } from './_components/category-form';
+import { getServerCategories } from '@/actions/server-action';
 
 const CourseIdPage = ({ params }: { params: { slug: string } }) => {
     const [course, setCourse] = useState<Course | null>(null);
+    const [categories, setCategories] = useState<Category[]>([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchCourses = async () => {
             try {
-                const fetchedCourses = await getCourseByMentor(params.slug);
-                setCourse(fetchedCourses);
+                const [fetchedCourse, fetchedCategories] = await Promise.all([getCourseByMentor(params.slug), getServerCategories()]);
+                setCategories(fetchedCategories);
+                setCourse(fetchedCourse);
             } catch (err: any) {
                 toast.error(err.message);
             } finally {
@@ -42,7 +46,12 @@ const CourseIdPage = ({ params }: { params: { slug: string } }) => {
 
         const requiredFields = [title, description, thumbnail, basePrice, categories, chapterIsPublished];
         const totalFields = requiredFields.length;
-        const completedFields = requiredFields.filter((field) => field).length;
+        const completedFields = requiredFields.filter((field) => {
+            if (Array.isArray(field)) {
+                return field.length > 0;
+            }
+            return field;
+        }).length;
 
         const completionText = `(${completedFields}/${totalFields})`;
 
@@ -73,14 +82,13 @@ const CourseIdPage = ({ params }: { params: { slug: string } }) => {
                             <TitleForm initialData={course} />
                             <DescriptionForm initialData={course} />
                             <ImageForm initialData={course} />
-                            {/* <CategoryForm
+                            <CategoryForm
                                 initialData={course}
-                                courseId={course._id}
                                 options={categories.map((category) => ({
                                     label: category.name,
                                     value: category._id,
                                 }))}
-                            /> */}
+                            />
                         </div>
                         <div className="space-y-6">
                             <div>
