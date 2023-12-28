@@ -8,11 +8,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzO
 
 ###
 POST {{BASE_URL}}
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMjExOTgxMywiZXhwIjoxNzAyNzI0NjEzLCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.sfiycdmWPkQPbJVU0dM_nlcW74o1JdinDRxc3hKQkmw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmM4MGMzOTdhMTE2MzRiM2ExNmI2NCIsImlhdCI6MTcwMzc3NDc1NSwiZXhwIjoxNzA0Mzc5NTU1LCJzdWIiOiJhdXRoZW50aWNhdGlvbiJ9.4VBHKgHyIVMlVxbSW1W0oDEeDiQA4T7AST02xQ6Qcd0
 Content-Type: application/json
 
 {
-  "name": "React"
+  "name": "Vue"
 }
 
 ###

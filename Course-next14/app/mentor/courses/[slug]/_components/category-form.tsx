@@ -1,10 +1,10 @@
 'use client';
 import { Pencil } from 'lucide-react';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import toast from 'react-hot-toast';
 import Select, { MultiValue } from 'react-select';
-import * as z from 'zod';
 
+import { updateCourse } from '@/actions/course-action';
 import { Button } from '@/components/ui/button';
 import { Course } from '@/types';
 
@@ -13,26 +13,29 @@ interface CategoryFormProps {
     options: { label: string; value: string }[];
 }
 
-const formSchema = z.object({
-    categories: z.array(z.string()).nonempty(),
-});
-
 export const CategoryForm = ({ initialData, options }: CategoryFormProps) => {
-    const [isEditing, setIsEditing] = useState(true);
+    const [isEditing, setIsEditing] = useState(false);
+    const [values, setValues] = useState<MultiValue<{ label: string; value: string }>>([]);
 
     const toggleEdit = () => setIsEditing((current) => !current);
 
-    const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    const defaultCategories = useMemo(() => {
+        const categories = initialData.categories?.map((category) => ({
+            label: category.name,
+            value: category._id,
+        }));
+        return categories;
+    }, [initialData.categories]);
+
+    const onSubmit = async () => {
         try {
-            toast.success('Course updated');
+            const categoryIds = values.map((value) => value.value);
+            await updateCourse(initialData._id, { categories: categoryIds });
+            toast.success('Course updated successfully');
             toggleEdit();
         } catch {
             toast.error('Something went wrong');
         }
-    };
-
-    const onSelect = (values: MultiValue<{ label: string; value: string }>) => {
-        console.log({ values });
     };
 
     return (
@@ -56,12 +59,15 @@ export const CategoryForm = ({ initialData, options }: CategoryFormProps) => {
                 name="categories"
                 className="basic-multi-select space-y-4 mt-4"
                 classNamePrefix="select"
-                onChange={onSelect}
+                onChange={(values) => setValues(values)}
                 isDisabled={!isEditing}
+                defaultValue={defaultCategories}
             />
             {isEditing && (
                 <div className="flex items-center gap-x-2">
-                    <Button type="submit">Save</Button>
+                    <Button onClick={onSubmit} type="submit">
+                        Save
+                    </Button>
                 </div>
             )}
         </div>
