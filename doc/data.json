@@ -1,0 +1,3784 @@
+{
+    "_id": "658be96e99b06c79ee5e5731",
+    "currency": "USD",
+    "variants": [
+        {
+            "_id": "658be97099b06c5a7c5e58f2",
+            "status": "inactive",
+            "dimensions": [
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "sleeve": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "hood": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                },
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                }
+            ],
+            "updated_at": "2023-12-28T03:36:46.104Z",
+            "product": "658be96e99b06c79ee5e5731",
+            "sku": "T0080US_YTH_ACR_AA00",
+            "stock": -1,
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Antique cherry red",
+                    "value_code": "antiquecherryred"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "tiers": [
+                {
+                    "name": "tier1",
+                    "price": 11.75
+                },
+                {
+                    "name": "tier2",
+                    "price": 11.5
+                },
+                {
+                    "name": "tier3",
+                    "price": 11.25
+                }
+            ],
+            "create_at": "2023-12-27T09:08:00.906Z",
+            "__v": 0,
+            "mockup": "63a27f8dabb4ee499b716c1c",
+            "base_cost": 11.75
+        },
+        {
+            "_id": "658be97099b06c33785e58f3",
+            "status": "inactive",
+            "dimensions": [
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "sleeve": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "hood": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                },
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                }
+            ],
+            "updated_at": "2023-12-28T02:17:05.539Z",
+            "product": "658be96e99b06c79ee5e5731",
+            "sku": "T0080US_YTH_ACR_AA01",
+            "stock": -1,
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Antique cherry red",
+                    "value_code": "antiquecherryred"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "tiers": [
+                {
+                    "name": "tier1",
+                    "price": 11.75
+                },
+                {
+                    "name": "tier2",
+                    "price": 11.5
+                },
+                {
+                    "name": "tier3",
+                    "price": 11.25
+                }
+            ],
+            "create_at": "2023-12-27T09:08:00.907Z",
+            "__v": 0,
+            "mockup": "657c13650366ede7537c246f",
+            "base_cost": 11.75
+        },
+        {
+            "_id": "658be97099b06c7eff5e58f4",
+            "status": "inactive",
+            "dimensions": [
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "sleeve": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "hood": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                },
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                }
+            ],
+            "updated_at": "2023-12-28T02:17:22.940Z",
+            "product": "658be96e99b06c79ee5e5731",
+            "sku": "T0080US_YTH_AIG_AA00",
+            "stock": -1,
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "antique irish green",
+                    "value_code": "antiqueirishgreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "tiers": [
+                {
+                    "name": "tier1",
+                    "price": 11.75
+                },
+                {
+                    "name": "tier2",
+                    "price": 11.5
+                },
+                {
+                    "name": "tier3",
+                    "price": 11.25
+                }
+            ],
+            "create_at": "2023-12-27T09:08:00.909Z",
+            "__v": 0,
+            "mockup": "63a27f8dabb4ee499b716c1c",
+            "base_cost": 11.75
+        },
+        {
+            "_id": "658be97099b06ce4405e58f5",
+            "status": "active",
+            "dimensions": [
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "sleeve": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "hood": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                },
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                }
+            ],
+            "updated_at": "2023-12-28T02:17:24.695Z",
+            "product": "658be96e99b06c79ee5e5731",
+            "sku": "T0080US_YTH_AIG_AA01",
+            "stock": -1,
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "antique irish green",
+                    "value_code": "antiqueirishgreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "tiers": [
+                {
+                    "name": "tier1",
+                    "price": 11.75
+                },
+                {
+                    "name": "tier2",
+                    "price": 11.5
+                },
+                {
+                    "name": "tier3",
+                    "price": 11.25
+                }
+            ],
+            "create_at": "2023-12-27T09:08:00.910Z",
+            "__v": 0,
+            "mockup": "657c13650366ede7537c246f",
+            "base_cost": 11.75
+        },
+        {
+            "_id": "658be97099b06c676a5e58f6",
+            "status": "active",
+            "dimensions": [
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "sleeve": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "hood": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                },
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                }
+            ],
+            "updated_at": "2023-12-28T02:17:27.436Z",
+            "product": "658be96e99b06c79ee5e5731",
+            "sku": "T0080US_TOD_ACR_AA00",
+            "stock": -1,
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Antique cherry red",
+                    "value_code": "antiquecherryred"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "tiers": [
+                {
+                    "name": "tier1",
+                    "price": 11.75
+                },
+                {
+                    "name": "tier2",
+                    "price": 11.5
+                },
+                {
+                    "name": "tier3",
+                    "price": 11.25
+                }
+            ],
+            "create_at": "2023-12-27T09:08:00.912Z",
+            "__v": 0,
+            "mockup": "657c13650366ede7537c246f",
+            "base_cost": 11.75
+        },
+        {
+            "_id": "658be97099b06c31335e58f7",
+            "status": "inactive",
+            "dimensions": [
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "sleeve": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "hood": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                },
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                }
+            ],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "product": "658be96e99b06c79ee5e5731",
+            "sku": "T0080US_TOD_ACR_AA01",
+            "stock": -1,
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Antique cherry red",
+                    "value_code": "antiquecherryred"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "tiers": [
+                {
+                    "name": "tier1",
+                    "price": 11.75
+                },
+                {
+                    "name": "tier2",
+                    "price": 11.5
+                },
+                {
+                    "name": "tier3",
+                    "price": 11.25
+                }
+            ],
+            "create_at": "2023-12-27T09:08:00.915Z",
+            "__v": 0,
+            "base_cost": 11.75
+        },
+        {
+            "_id": "658be97099b06cf57b5e58f8",
+            "status": "active",
+            "dimensions": [
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "sleeve": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "hood": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                },
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                }
+            ],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "product": "658be96e99b06c79ee5e5731",
+            "sku": "T0080US_TOD_AIG_AA00",
+            "stock": -1,
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "antique irish green",
+                    "value_code": "antiqueirishgreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "tiers": [
+                {
+                    "name": "tier1",
+                    "price": 11.75
+                },
+                {
+                    "name": "tier2",
+                    "price": 11.5
+                },
+                {
+                    "name": "tier3",
+                    "price": 11.25
+                }
+            ],
+            "create_at": "2023-12-27T09:08:00.916Z",
+            "__v": 0,
+            "base_cost": 11.75
+        },
+        {
+            "_id": "658be97099b06c2da55e58f9",
+            "status": "active",
+            "dimensions": [
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "sleeve": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "hood": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                },
+                {
+                    "front": {
+                        "width": 2000,
+                        "height": 2000
+                    },
+                    "back": {
+                        "width": 2000,
+                        "height": 2000
+                    }
+                }
+            ],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "product": "658be96e99b06c79ee5e5731",
+            "sku": "T0080US_TOD_AIG_AA01",
+            "stock": -1,
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "antique irish green",
+                    "value_code": "antiqueirishgreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "tiers": [
+                {
+                    "name": "tier1",
+                    "price": 11.75
+                },
+                {
+                    "name": "tier2",
+                    "price": 11.5
+                },
+                {
+                    "name": "tier3",
+                    "price": 11.25
+                }
+            ],
+            "create_at": "2023-12-27T09:08:00.920Z",
+            "__v": 0,
+            "base_cost": 11.75
+        },
+        {
+            "_id": "658bfb1909fc8480888678e1",
+            "sku": "T0080US_YTH_RED_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Red",
+                    "value_code": "red"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.088Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84968a8678e2",
+            "sku": "T0080US_YTH_RED_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Red",
+                    "value_code": "red"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.089Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8429018678e3",
+            "sku": "T0080US_YTH_BLK_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Black",
+                    "value_code": "black"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.090Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8430778678e4",
+            "sku": "T0080US_YTH_BLK_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Black",
+                    "value_code": "black"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.092Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8427318678e5",
+            "sku": "T0080US_YTH_WHI_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "White",
+                    "value_code": "white"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.092Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc848ecb8678e6",
+            "sku": "T0080US_YTH_WHI_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "White",
+                    "value_code": "white"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.093Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8473498678e7",
+            "sku": "T0080US_YTH_NAV_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Navy",
+                    "value_code": "navy"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.094Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84e8b58678e8",
+            "sku": "T0080US_YTH_NAV_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Navy",
+                    "value_code": "navy"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.094Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc846dbd8678e9",
+            "sku": "T0080US_YTH_PPL_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Purple",
+                    "value_code": "purple"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.095Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84bec98678ea",
+            "sku": "T0080US_YTH_PPL_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Purple",
+                    "value_code": "purple"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.095Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc849f0b8678eb",
+            "sku": "T0080US_YTH_LTB_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Light Blue",
+                    "value_code": "lightblue"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.097Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8499018678ec",
+            "sku": "T0080US_YTH_LTB_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Light Blue",
+                    "value_code": "lightblue"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.097Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc842dff8678ed",
+            "sku": "T0080US_YTH_LTP_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Light Pink",
+                    "value_code": "lightpink"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.098Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8426eb8678ee",
+            "sku": "T0080US_YTH_LTP_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Light Pink",
+                    "value_code": "lightpink"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.100Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc845ce98678ef",
+            "sku": "T0080US_YTH_DKH_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Dark Heather",
+                    "value_code": "darkheather"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.100Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc843ac98678f0",
+            "sku": "T0080US_YTH_DKH_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Dark Heather",
+                    "value_code": "darkheather"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.101Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc840c9a8678f1",
+            "sku": "T0080US_YTH_RYB_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Royal Blue",
+                    "value_code": "royalblue"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.102Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8487038678f2",
+            "sku": "T0080US_YTH_RYB_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Royal Blue",
+                    "value_code": "royalblue"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.105Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8412a08678f3",
+            "sku": "T0080US_YTH_ORG_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Orange",
+                    "value_code": "orange"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.106Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc846a9d8678f4",
+            "sku": "T0080US_YTH_ORG_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Orange",
+                    "value_code": "orange"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.107Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84257b8678f5",
+            "sku": "T0080US_YTH_KLG_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Kelly Green",
+                    "value_code": "kellygreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.108Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8418358678f6",
+            "sku": "T0080US_YTH_KLG_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Kelly Green",
+                    "value_code": "kellygreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.108Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc841b6f8678f7",
+            "sku": "T0080US_YTH_SGR_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Sport Grey",
+                    "value_code": "sportgrey"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.109Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc844df98678f8",
+            "sku": "T0080US_YTH_SGR_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Sport Grey",
+                    "value_code": "sportgrey"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.110Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8449328678f9",
+            "sku": "T0080US_YTH_GOL_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Gold",
+                    "value_code": "gold"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.111Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc842e7e8678fa",
+            "sku": "T0080US_YTH_GOL_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Gold",
+                    "value_code": "gold"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.112Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84763a8678fb",
+            "sku": "T0080US_YTH_BRO_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Brown",
+                    "value_code": "brown"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.113Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84dea08678fc",
+            "sku": "T0080US_YTH_BRO_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Brown",
+                    "value_code": "brown"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.114Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc841eae8678fd",
+            "sku": "T0080US_YTH_DPG_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Deep Green",
+                    "value_code": "deepgreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.115Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84dafb8678fe",
+            "sku": "T0080US_YTH_DPG_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Deep Green",
+                    "value_code": "deepgreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.116Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc846fdd8678ff",
+            "sku": "T0080US_YTH_CHC_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Charcoal",
+                    "value_code": "charcoal"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.117Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84d660867900",
+            "sku": "T0080US_YTH_CHC_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Charcoal",
+                    "value_code": "charcoal"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.123Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84cedf867901",
+            "sku": "T0080US_YTH_RYL_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Royal",
+                    "value_code": "royal"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.124Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8430a7867902",
+            "sku": "T0080US_YTH_RYL_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Youth",
+                    "value_code": "youth"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Royal",
+                    "value_code": "royal"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.125Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc849840867903",
+            "sku": "T0080US_TOD_RED_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Red",
+                    "value_code": "red"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.126Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc841b86867904",
+            "sku": "T0080US_TOD_RED_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Red",
+                    "value_code": "red"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.127Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc845971867905",
+            "sku": "T0080US_TOD_BLK_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Black",
+                    "value_code": "black"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.130Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc849b14867906",
+            "sku": "T0080US_TOD_BLK_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Black",
+                    "value_code": "black"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.131Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84934a867907",
+            "sku": "T0080US_TOD_WHI_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "White",
+                    "value_code": "white"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.132Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc845892867908",
+            "sku": "T0080US_TOD_WHI_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "White",
+                    "value_code": "white"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.132Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84b370867909",
+            "sku": "T0080US_TOD_NAV_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Navy",
+                    "value_code": "navy"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.133Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84341d86790a",
+            "sku": "T0080US_TOD_NAV_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Navy",
+                    "value_code": "navy"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.134Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84a2bd86790b",
+            "sku": "T0080US_TOD_PPL_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Purple",
+                    "value_code": "purple"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.135Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84c14286790c",
+            "sku": "T0080US_TOD_PPL_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Purple",
+                    "value_code": "purple"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.136Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84af0d86790d",
+            "sku": "T0080US_TOD_LTB_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Light Blue",
+                    "value_code": "lightblue"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.137Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8462e186790e",
+            "sku": "T0080US_TOD_LTB_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Light Blue",
+                    "value_code": "lightblue"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.138Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84e42a86790f",
+            "sku": "T0080US_TOD_LTP_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Light Pink",
+                    "value_code": "lightpink"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.141Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc844d85867910",
+            "sku": "T0080US_TOD_LTP_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Light Pink",
+                    "value_code": "lightpink"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.142Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84ea95867911",
+            "sku": "T0080US_TOD_DKH_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Dark Heather",
+                    "value_code": "darkheather"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.143Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc848267867912",
+            "sku": "T0080US_TOD_DKH_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Dark Heather",
+                    "value_code": "darkheather"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.144Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84678c867913",
+            "sku": "T0080US_TOD_RYB_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Royal Blue",
+                    "value_code": "royalblue"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.150Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc842e25867914",
+            "sku": "T0080US_TOD_RYB_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Royal Blue",
+                    "value_code": "royalblue"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.151Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84ca33867915",
+            "sku": "T0080US_TOD_ORG_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Orange",
+                    "value_code": "orange"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.152Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc848382867916",
+            "sku": "T0080US_TOD_ORG_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Orange",
+                    "value_code": "orange"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.153Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8453a1867917",
+            "sku": "T0080US_TOD_KLG_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Kelly Green",
+                    "value_code": "kellygreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.154Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8432d7867918",
+            "sku": "T0080US_TOD_KLG_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Kelly Green",
+                    "value_code": "kellygreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.156Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc847fd7867919",
+            "sku": "T0080US_TOD_SGR_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Sport Grey",
+                    "value_code": "sportgrey"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.157Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84f18886791a",
+            "sku": "T0080US_TOD_SGR_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Sport Grey",
+                    "value_code": "sportgrey"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.158Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc842ffa86791b",
+            "sku": "T0080US_TOD_GOL_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Gold",
+                    "value_code": "gold"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.159Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84370186791c",
+            "sku": "T0080US_TOD_GOL_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Gold",
+                    "value_code": "gold"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.160Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc842a7986791d",
+            "sku": "T0080US_TOD_BRO_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Brown",
+                    "value_code": "brown"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.162Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84200e86791e",
+            "sku": "T0080US_TOD_BRO_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Brown",
+                    "value_code": "brown"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.163Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84715186791f",
+            "sku": "T0080US_TOD_DPG_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Deep Green",
+                    "value_code": "deepgreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.164Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc8448f4867920",
+            "sku": "T0080US_TOD_DPG_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Deep Green",
+                    "value_code": "deepgreen"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.165Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84c111867921",
+            "sku": "T0080US_TOD_CHC_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Charcoal",
+                    "value_code": "charcoal"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.166Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc842d5f867922",
+            "sku": "T0080US_TOD_CHC_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Charcoal",
+                    "value_code": "charcoal"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.167Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc842284867923",
+            "sku": "T0080US_TOD_RYL_AA00",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Royal",
+                    "value_code": "royal"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "XS",
+                    "value_code": "xs"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.167Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        },
+        {
+            "_id": "658bfb1909fc84ba78867924",
+            "sku": "T0080US_TOD_RYL_AA01",
+            "attributes": [
+                {
+                    "name": "label",
+                    "type": "label",
+                    "value_text": "Toddler",
+                    "value_code": "toddler"
+                },
+                {
+                    "name": "color",
+                    "type": "color",
+                    "value_text": "Royal",
+                    "value_code": "royal"
+                },
+                {
+                    "name": "size",
+                    "type": "size",
+                    "value_text": "S",
+                    "value_code": "s"
+                }
+            ],
+            "create_at": "2023-12-27T10:23:21.168Z",
+            "dimensions": [],
+            "product": "658be96e99b06c79ee5e5731",
+            "status": "active",
+            "stock": -1,
+            "tiers": [],
+            "updated_at": "2023-12-27T10:23:52.556Z",
+            "base_cost": ""
+        }
+    ],
+    "attributes": [
+        {
+            "status": "active",
+            "hide_on_storefront": false,
+            "customized": false,
+            "is_preselected": true,
+            "name": "label",
+            "type": "label",
+            "values": [
+                {
+                    "text": "Youth",
+                    "code": "youth"
+                },
+                {
+                    "text": "Toddler",
+                    "code": "toddler"
+                }
+            ]
+        },
+        {
+            "status": "active",
+            "hide_on_storefront": false,
+            "customized": true,
+            "is_preselected": true,
+            "name": "color",
+            "type": "color",
+            "values": [
+                {
+                    "text": "Antique cherry red",
+                    "code": "antiquecherryred"
+                },
+                {
+                    "text": "antique irish green",
+                    "code": "antiqueirishgreen"
+                },
+                {
+                    "text": "Red",
+                    "code": "red"
+                },
+                {
+                    "text": "Black",
+                    "code": "black"
+                },
+                {
+                    "text": "White",
+                    "code": "white"
+                },
+                {
+                    "text": "Navy",
+                    "code": "navy"
+                },
+                {
+                    "text": "Purple",
+                    "code": "purple"
+                },
+                {
+                    "text": "Light Blue",
+                    "code": "lightblue"
+                },
+                {
+                    "text": "Light Pink",
+                    "code": "lightpink"
+                },
+                {
+                    "text": "Dark Heather",
+                    "code": "darkheather"
+                },
+                {
+                    "text": "Royal Blue",
+                    "code": "royalblue"
+                },
+                {
+                    "text": "Orange",
+                    "code": "orange"
+                },
+                {
+                    "text": "Kelly Green",
+                    "code": "kellygreen"
+                },
+                {
+                    "text": "Sport Grey",
+                    "code": "sportgrey"
+                },
+                {
+                    "text": "Gold",
+                    "code": "gold"
+                },
+                {
+                    "text": "Brown",
+                    "code": "brown"
+                },
+                {
+                    "text": "Deep Green",
+                    "code": "deepgreen"
+                },
+                {
+                    "text": "Charcoal",
+                    "code": "charcoal"
+                },
+                {
+                    "text": "Royal",
+                    "code": "royal"
+                }
+            ]
+        },
+        {
+            "status": "active",
+            "hide_on_storefront": false,
+            "customized": false,
+            "is_preselected": false,
+            "name": "size",
+            "type": "size",
+            "values": [
+                {
+                    "text": "XS",
+                    "code": "xs"
+                },
+                {
+                    "text": "S",
+                    "code": "s"
+                }
+            ]
+        }
+    ],
+    "description": "<p>Bestseller ever. With white drawstring and kangaroo pocket. Perfect for daily wear.<br>Fabric: Scuba(95% polyester and 5% spandex) <br>Regular fit<br>White drawstring, front pocket and black inner hood<br>Fabric Weight: 230 g/m². <br>Stitch Color: black or white, automatically matched based on patterns.</p>",
+    "sku": "T0080US",
+    "sku_prefix": "T0080",
+    "slug": "us_hangnt58499_branding_custom",
+    "title": "US_HANGNT58499_branding_custom",
+    "thumbnail_link": "https://thanhcong.s3.us-east-1.amazonaws.com/Etsy/Etsy-Khanh/K-0612A115.png",
+    "mockups": [
+        {
+            "_id": "63a27f8dabb4ee499b716c1c",
+            "preview": {
+                "Front": {
+                    "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/safezone/Front.png",
+                    "frame_x": 6000,
+                    "frame_y": 3000,
+                    "frame_width": 12000,
+                    "frame_height": 6000,
+                    "image_width": 12000,
+                    "image_height": 6000
+                }
+            },
+            "side_infos": {
+                "Front": {
+                    "type": "Front",
+                    "create_time": "2022-12-15T06:46:25.512Z",
+                    "update_time": "2022-12-15T06:46:25.512Z",
+                    "constraints": {
+                        "minimum_dpi": 72
+                    },
+                    "fusion_size": {
+                        "artwork_fusion_size": {
+                            "width": 12000,
+                            "height": 6000,
+                            "width_in_inch": 166.66666666666666,
+                            "height_in_inch": 83.33333333333333
+                        }
+                    },
+                    "enable_background_color": "t",
+                    "fulfill_require_artwork": "t",
+                    "preview": {
+                        "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/safezone/Front.png",
+                        "frame_x": 6000,
+                        "frame_y": 3000,
+                        "frame_width": 12000,
+                        "frame_height": 6000,
+                        "image_width": 12000,
+                        "image_height": 6000
+                    }
+                }
+            },
+            "preview_meta": {
+                "z_index": 1,
+                "enable_preview": 1,
+                "color_attr_interactive": 0,
+                "default_material_color": "#ffffff"
+            },
+            "meta": {
+                "mockup_infos": [
+                    {
+                        "name": "Front_Model",
+                        "side": "front",
+                        "type": "warp-new-standard",
+                        "parts": [
+                            {
+                                "name": "Front_Model.Background",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Model.Background.png"
+                            },
+                            {
+                                "name": "Front_Model.Front.Frotnt",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Model.Front.Frotnt.png"
+                            },
+                            {
+                                "name": "Front_Model.Front.Design.Front",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Model.Front.Design.Front.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Model.Front.Design.Front.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Model.Front.Design.Left Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Model.Front.Design.Left%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Model.Front.Design.Left%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Model.Front.Design.Right Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Model.Front.Design.Right%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Model.Front.Design.Right%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Model.Front.Design.Neck",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Model.Front.Design.Neck.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Model.Front.Design.Neck.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Model.Front.fx.multiply",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Model.Front.fx.multiply.png",
+                                "blend_mode": "multiply"
+                            },
+                            {
+                                "name": "Front_Model.Front.fx.screen",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Model.Front.fx.screen.png",
+                                "blend_mode": "screen"
+                            }
+                        ],
+                        "size": {
+                            "width": 1000,
+                            "height": 1000
+                        }
+                    },
+                    {
+                        "name": "Back_Model",
+                        "side": "front",
+                        "type": "warp-new-standard",
+                        "parts": [
+                            {
+                                "name": "Back_Model.Background",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back_Model.Background.png"
+                            },
+                            {
+                                "name": "Back_Model.Back.Back",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back_Model.Back.Back.png"
+                            },
+                            {
+                                "name": "Back_Model.Back.Design.Back",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back_Model.Back.Design.Back.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Back_Model.Back.Design.Back.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Back_Model.Back.Design.Right Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back_Model.Back.Design.Right%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Back_Model.Back.Design.Right%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Back_Model.Back.Design.Left Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back_Model.Back.Design.Left%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Back_Model.Back.Design.Left%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Back_Model.Back.Design.Neck",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back_Model.Back.Design.Neck.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Back_Model.Back.Design.Neck.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Back_Model.Back.fx.multiply",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back_Model.Back.fx.multiply.png",
+                                "blend_mode": "multiply"
+                            },
+                            {
+                                "name": "Back_Model.Back.fx.screen",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back_Model.Back.fx.screen.png",
+                                "blend_mode": "screen"
+                            }
+                        ],
+                        "size": {
+                            "width": 1000,
+                            "height": 1000
+                        }
+                    },
+                    {
+                        "name": "Front_Back_Model",
+                        "side": "front",
+                        "type": "warp-new-standard",
+                        "parts": [
+                            {
+                                "name": "Front_Back_Model.Background",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Background.png"
+                            },
+                            {
+                                "name": "Front_Back_Model.Back.Back",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Back.Back.png"
+                            },
+                            {
+                                "name": "Front_Back_Model.Back.Design.Back",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Back.Design.Back.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Back_Model.Back.Design.Back.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Back_Model.Back.Design.Right Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Back.Design.Right%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Back_Model.Back.Design.Right%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Back_Model.Back.Design.Left Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Back.Design.Left%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Back_Model.Back.Design.Left%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Back_Model.Back.Design.Neck",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Back.Design.Neck.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Back_Model.Back.Design.Neck.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Back_Model.Back.fx.multiply",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Back.fx.multiply.png",
+                                "blend_mode": "multiply"
+                            },
+                            {
+                                "name": "Front_Back_Model.Back.fx.screen",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Back.fx.screen.png",
+                                "blend_mode": "screen"
+                            },
+                            {
+                                "name": "Front_Back_Model.Front.Front",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Front.Front.png"
+                            },
+                            {
+                                "name": "Front_Back_Model.Front.Design.Front",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Front.Design.Front.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Back_Model.Front.Design.Front.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Back_Model.Front.Design.Left Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Front.Design.Left%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Back_Model.Front.Design.Left%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Back_Model.Front.Design.Right Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Front.Design.Right%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Back_Model.Front.Design.Right%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Back_Model.Front.Design.Neck",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Front.Design.Neck.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front_Back_Model.Front.Design.Neck.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front_Back_Model.Front.fx.multiply",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Front.fx.multiply.png",
+                                "blend_mode": "multiply"
+                            },
+                            {
+                                "name": "Front_Back_Model.Front.fx.screen",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front_Back_Model.Front.fx.screen.png",
+                                "blend_mode": "screen"
+                            }
+                        ],
+                        "size": {
+                            "width": 1000,
+                            "height": 1000
+                        }
+                    },
+                    {
+                        "name": "Front",
+                        "side": "front",
+                        "type": "warp-new-standard",
+                        "parts": [
+                            {
+                                "name": "Front.Sweater",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front.Sweater.png"
+                            },
+                            {
+                                "name": "Front.Design.Front",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front.Design.Front.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front.Design.Front.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front.Design.Neck B",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front.Design.Neck%2520B.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front.Design.Neck%2520B.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front.Design.Neck F",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front.Design.Neck%2520F.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front.Design.Neck%2520F.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front.Design.Left Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front.Design.Left%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front.Design.Left%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front.Design.Right Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front.Design.Right%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front.Design.Right%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front.Fx",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front.Fx.png"
+                            }
+                        ],
+                        "size": {
+                            "width": 1000,
+                            "height": 1000
+                        }
+                    },
+                    {
+                        "name": "Back",
+                        "side": "front",
+                        "type": "warp-new-standard",
+                        "parts": [
+                            {
+                                "name": "Back.Sweater",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back.Sweater.png"
+                            },
+                            {
+                                "name": "Back.Design.Back",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back.Design.Back.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Back.Design.Back.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Back.Design.Neck Back",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back.Design.Neck%2520Back.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Back.Design.Neck%2520Back.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Back.Design.Left Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back.Design.Left%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Back.Design.Left%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Back.Design.Right Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back.Design.Right%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Back.Design.Right%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Back.fx",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Back.fx.png"
+                            }
+                        ],
+                        "size": {
+                            "width": 1000,
+                            "height": 1000
+                        }
+                    },
+                    {
+                        "name": "Front Back",
+                        "side": "front",
+                        "type": "warp-new-standard",
+                        "parts": [
+                            {
+                                "name": "Front Back.Background",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Background.png"
+                            },
+                            {
+                                "name": "Front Back.Back.Design.Back",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Back.Design.Back.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front%2520Back.Back.Design.Back.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front Back.Back.Design.Neck Back",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Back.Design.Neck%2520Back.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front%2520Back.Back.Design.Neck%2520Back.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front Back.Back.Design.Left Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Back.Design.Left%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front%2520Back.Back.Design.Left%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front Back.Back.Design.Right Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Back.Design.Right%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front%2520Back.Back.Design.Right%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front Back.Back.fx",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Back.fx.png"
+                            },
+                            {
+                                "name": "Front Back.Layer 1",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Layer%25201.png"
+                            },
+                            {
+                                "name": "Front Back.Front.Design.Front",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Front.Design.Front.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front%2520Back.Front.Design.Front.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front Back.Front.Design.Back",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Front.Design.Back.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front%2520Back.Front.Design.Back.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front Back.Front.Design.Neck B",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Front.Design.Neck%2520B.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front%2520Back.Front.Design.Neck%2520B.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front Back.Front.Design.Neck F",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Front.Design.Neck%2520F.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front%2520Back.Front.Design.Neck%2520F.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front Back.Front.Design.Left Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Front.Design.Left%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front%2520Back.Front.Design.Left%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front Back.Front.Design.Right Sleeve",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Front.Design.Right%2520Sleeve.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/mockups/platform126-dev/product-mockups/all-over-print-sweater-midweight/15-12-22/model/Front%2520Back.Front.Design.Right%2520Sleeve.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                }
+                            },
+                            {
+                                "name": "Front Back.Front.Curves 1",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockups/product-mockups/all-over-print-sweater-midweight/15-12-22/image-mask/Front%2520Back.Front.Curves%25201.png"
+                            }
+                        ],
+                        "size": {
+                            "width": 1000,
+                            "height": 1000
+                        }
+                    }
+                ],
+                "consistency_name": "all-over-print-sweater-midweight",
+                "artwork_side_info": "artwork-per-side",
+                "prefix_name": "all-over-print-sweater-midweight",
+                "version": "v2",
+                "use_origin_artwork": true
+            },
+            "dpi": {
+                "minimum": 72,
+                "width": 72,
+                "height": 72
+            },
+            "preview_v2": {
+                "back": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweater_3d/back.png",
+                    "position": {
+                        "top": 2173,
+                        "left": 6111
+                    },
+                    "size": {
+                        "width": 3140,
+                        "height": 2968
+                    }
+                },
+                "front": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweater_3d/front.png",
+                    "position": {
+                        "top": 2164,
+                        "left": 2734
+                    },
+                    "size": {
+                        "width": 3132,
+                        "height": 2986
+                    }
+                },
+                "hem_front": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweater_3d/hem-1.png",
+                    "position": {
+                        "top": 4937,
+                        "left": 2747
+                    },
+                    "size": {
+                        "width": 3110,
+                        "height": 546
+                    }
+                },
+                "hem_back": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweater_3d/hem-2.png",
+                    "position": {
+                        "top": 4937,
+                        "left": 6111
+                    },
+                    "size": {
+                        "width": 3137,
+                        "height": 546
+                    }
+                },
+                "sleeve_right": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweater_3d/sleeve-1.png",
+                    "position": {
+                        "top": 2666,
+                        "left": 45
+                    },
+                    "size": {
+                        "width": 2555,
+                        "height": 2499
+                    }
+                },
+                "sleeve_left": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweater_3d/sleeve-2.png",
+                    "position": {
+                        "top": 2989,
+                        "left": 9629
+                    },
+                    "size": {
+                        "width": 2073,
+                        "height": 2157
+                    }
+                },
+                "cuff_right": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweater_3d/cuff-1.png",
+                    "position": {
+                        "top": 4931,
+                        "left": 643
+                    },
+                    "size": {
+                        "width": 1360,
+                        "height": 550
+                    }
+                },
+                "cuff_left": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweater_3d/cuff-2.png",
+                    "position": {
+                        "top": 4931,
+                        "left": 9993
+                    },
+                    "size": {
+                        "width": 1360,
+                        "height": 550
+                    }
+                },
+                "neck_front": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweater_3d/neck-1.png",
+                    "position": {
+                        "top": 1910,
+                        "left": 3651
+                    },
+                    "size": {
+                        "width": 1314,
+                        "height": 256
+                    }
+                },
+                "neck_back": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweater_3d/neck-2.png",
+                    "position": {
+                        "top": 1910,
+                        "left": 7303
+                    },
+                    "size": {
+                        "width": 772,
+                        "height": 296
+                    }
+                }
+            },
+            "applied_variants": [
+                "658be97099b06c5a7c5e58f2",
+                "658be97099b06c7eff5e58f4"
+            ]
+        },
+        {
+            "_id": "657c13650366ede7537c246f",
+            "preview": {
+                "Front": {
+                    "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockup-auto/build-model-job/1702621593122/front.png",
+                    "frame_x": 450,
+                    "frame_y": 281,
+                    "frame_width": 900,
+                    "frame_height": 562,
+                    "image_width": 900,
+                    "image_height": 562
+                }
+            },
+            "side_infos": {
+                "Front": {
+                    "type": "Front",
+                    "create_time": "2023-12-15T08:46:02.603Z",
+                    "update_time": "2023-12-15T08:46:02.603Z",
+                    "constraints": {
+                        "minimum_dpi": 72
+                    },
+                    "fusion_size": {
+                        "artwork_fusion_size": {
+                            "width": 900,
+                            "height": 562,
+                            "width_in_inch": 12.5,
+                            "height_in_inch": 7.805555555555555
+                        }
+                    },
+                    "enable_background_color": "t",
+                    "fulfill_require_artwork": "t",
+                    "preview": {
+                        "image_path": "https://platform126.s3.us-west-1.amazonaws.com/mockup-auto/build-model-job/1702621593122/front.png",
+                        "frame_x": 450,
+                        "frame_y": 281,
+                        "frame_width": 900,
+                        "frame_height": 562,
+                        "image_width": 900,
+                        "image_height": 562
+                    }
+                }
+            },
+            "preview_meta": {
+                "z_index": 1,
+                "enable_preview": 1,
+                "color_attr_interactive": 0,
+                "default_material_color": "#ffffff"
+            },
+            "meta": {
+                "mockup_infos": [
+                    {
+                        "name": "Front",
+                        "side": "front",
+                        "type": "warp-new-standard-v2",
+                        "parts": [
+                            {
+                                "name": "Front.Front.Background",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups/657c103dbe2fad8770432c9b/image-mask/1702629962620/Front.Front.Background.png"
+                            },
+                            {
+                                "name": "Front.Front.Colors.color_mask",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups/Transparent.png",
+                                "color_mask_path": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups/657c103dbe2fad8770432c9b/color-mask/1702629971897/Front.Front.Colors.color_mask.png",
+                                "is_color_image": true
+                            },
+                            {
+                                "name": "Front.Front.Design.Front_0",
+                                "side": "front",
+                                "mask_path": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups/657c103dbe2fad8770432c9b/image-mask/1702629965560/Front.Front.Design.Front_0.png",
+                                "warp_type": "warp_npy",
+                                "warp_info": {
+                                    "model": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups/657c103dbe2fad8770432c9b/model/1702629966523/Front.Front.Design.Front_0.model.npy",
+                                    "artwork_width": 2000,
+                                    "artwork_height": 2000
+                                },
+                                "effects": [],
+                                "fill": 100,
+                                "opacity": 100
+                            },
+                            {
+                                "name": "Front.Front.fx.normal_0",
+                                "image_path": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups/657c103dbe2fad8770432c9b/image-mask/1702629963538/Front.Front.fx.normal_0.png",
+                                "blend_mode": "normal"
+                            }
+                        ],
+                        "size": {
+                            "width": 1000,
+                            "height": 1000
+                        },
+                        "heather_mapping": {
+                            "heather_texture": "https://platform126.s3.us-west-1.amazonaws.com/platform126/public/assets/heather_texture.png"
+                        }
+                    }
+                ],
+                "consistency_name": "f_long-sleeve-t-shirt-made-in-us",
+                "artwork_side_info": "artwork-per-side",
+                "prefix_name": "f_long-sleeve-t-shirt-made-in-us",
+                "version": "v2",
+                "use_origin_artwork": true
+            },
+            "dpi": {
+                "minimum": 72,
+                "width": 72,
+                "height": 72
+            },
+            "preview_v2": {
+                "back": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweatshirt_3d/back.png",
+                    "position": {
+                        "top": 243,
+                        "left": 379
+                    },
+                    "size": {
+                        "width": 439,
+                        "height": 502
+                    }
+                },
+                "front": {
+                    "template_url": "https://platform126.s3.us-west-1.amazonaws.com/product-mockups-v2/preview/28-05-23/sweatshirt_3d/front.png",
+                    "position": {
+                        "top": 264,
+                        "left": 383
+                    },
+                    "size": {
+                        "width": 437,
+                        "height": 500
+                    }
+                }
+            },
+            "applied_variants": [
+                "658be97099b06c33785e58f3",
+                "658be97099b06ce4405e58f5",
+                "658be97099b06c676a5e58f6"
+            ]
+        }
+    ]
+}
