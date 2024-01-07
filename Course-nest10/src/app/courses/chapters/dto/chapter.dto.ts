@@ -27,9 +27,6 @@ export class CreateChapterDto extends BaseChapterDto {
   @IsNotEmpty({ message: 'Title must not be empty' })
   @MinLength(3, { message: 'Title must be at least 3 characters long' })
   title: string;
-
-  courseId: string;
-  accountId: string;
 }
 
 export class UpdateChapterByIdDto extends BaseChapterDto {

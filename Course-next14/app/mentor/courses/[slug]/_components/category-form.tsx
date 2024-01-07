@@ -4,16 +4,17 @@ import { useMemo, useState } from 'react';
 import toast from 'react-hot-toast';
 import Select, { MultiValue } from 'react-select';
 
-import { updateCourse } from '@/actions/course-action';
+import { updateCourseByMentor } from '@/actions/course-action';
 import { Button } from '@/components/ui/button';
 import { Course } from '@/types';
 
 interface CategoryFormProps {
     initialData: Course;
     options: { label: string; value: string }[];
+    onRefresh?: Function;
 }
 
-export const CategoryForm = ({ initialData, options }: CategoryFormProps) => {
+export const CategoryForm = ({ initialData, options, onRefresh }: CategoryFormProps) => {
     const [isEditing, setIsEditing] = useState(false);
     const [values, setValues] = useState<MultiValue<{ label: string; value: string }>>([]);
 
@@ -30,9 +31,10 @@ export const CategoryForm = ({ initialData, options }: CategoryFormProps) => {
     const onSubmit = async () => {
         try {
             const categoryIds = values.map((value) => value.value);
-            await updateCourse(initialData._id, { categories: categoryIds });
+            await updateCourseByMentor(initialData._id, { categories: categoryIds });
             toast.success('Course updated successfully');
             toggleEdit();
+            typeof onRefresh === 'function' && onRefresh();
         } catch {
             toast.error('Something went wrong');
         }

@@ -46,7 +46,7 @@ export interface Chapter {
     position: number;
     isPublished: boolean;
     isFree: boolean;
-    course?: Course | null;
+    course: Course | string;
     createdAt: Date;
     updatedAt: Date;
 }

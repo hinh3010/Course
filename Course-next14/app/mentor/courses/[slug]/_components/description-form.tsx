@@ -2,7 +2,6 @@
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Pencil } from 'lucide-react';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
@@ -13,10 +12,11 @@ import { Form, FormControl, FormField, FormItem, FormMessage } from '@/component
 import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
 import { Course } from '@/types';
-import { updateCourse } from '@/actions/course-action';
+import { updateCourseByMentor } from '@/actions/course-action';
 
 interface DescriptionFormProps {
     initialData: Course;
+    onRefresh?: Function;
 }
 
 const formSchema = z.object({
@@ -25,12 +25,10 @@ const formSchema = z.object({
     }),
 });
 
-export const DescriptionForm = ({ initialData }: DescriptionFormProps) => {
+export const DescriptionForm = ({ initialData, onRefresh }: DescriptionFormProps) => {
     const [isEditing, setIsEditing] = useState(false);
 
     const toggleEdit = () => setIsEditing((current) => !current);
-
-    const router = useRouter();
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -44,12 +42,12 @@ export const DescriptionForm = ({ initialData }: DescriptionFormProps) => {
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
             if (values.description === initialData.description) return;
-            await updateCourse(initialData._id, values);
+            await updateCourseByMentor(initialData._id, values);
             toast.success('Course updated successfully');
             toggleEdit();
-            router.refresh();
-        } catch {
-            toast.error('Something went wrong');
+            typeof onRefresh === 'function' && onRefresh();
+        } catch (error: any) {
+            toast.error(error.message);
         }
     };
 

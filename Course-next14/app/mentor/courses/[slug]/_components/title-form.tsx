@@ -8,7 +8,7 @@ import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import * as z from 'zod';
 
-import { updateCourse } from '@/actions/course-action';
+import { updateCourseByMentor } from '@/actions/course-action';
 import { Button } from '@/components/ui/button';
 import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
@@ -41,12 +41,13 @@ export const TitleForm = ({ initialData }: TitleFormProps) => {
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
             if (values.title === initialData.title) return;
-            const newCourse: Course = await updateCourse(initialData._id, values);
+            const newCourse: Course = await updateCourseByMentor(initialData._id, values);
             toast.success('Course updated successfully');
-            toggleEdit();
             router.push(`${newCourse.slug}`);
-        } catch {
-            toast.error('Something went wrong');
+        } catch (error: any) {
+            toast.error(error.message);
+        } finally {
+            toggleEdit();
         }
     };
 

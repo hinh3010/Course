@@ -6,17 +6,16 @@ import { Banner } from '@/components/banner';
 import { Preview } from '@/components/preview';
 import { Separator } from '@/components/ui/separator';
 
-const VideoPlayer = dynamic(() => import('./_components/video-player').then((a) => a.VideoPlayer), {
-    ssr: false,
-});
-
 import { getMyCourseBySlug } from '@/actions/course-action';
 import { LoadingProvider } from '@/components/providers/loading-provider';
-import faker, { Attachment, Chapter, Course, Purchase, UserProgress } from '@/types';
+import faker, { Attachment, Chapter, Course, UserProgress } from '@/types';
 import dynamic from 'next/dynamic';
 import toast from 'react-hot-toast';
-import { CourseEnrollButton } from './_components/course-enroll-button';
 import { CourseProgressButton } from './_components/course-progress-button';
+
+const VideoPlayer = dynamic(() => import('@/components/video-player').then((a) => a.VideoPlayer), {
+    ssr: false,
+});
 
 const ChapterIdPage = ({ params }: { params: { slug: string; chapterSlug: string } }) => {
     const [isLoading, setIsLoading] = useState(true);

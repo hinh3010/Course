@@ -18,6 +18,11 @@ export const getMyCourseBySlug = async (slug: string): Promise<Course> => {
     return await axiosActions.get(`my-courses/${slug}`);
 };
 
+// mentor
+export const createCourseByMentor = async (data: any): Promise<Course> => {
+    return await axiosActions.post('mentor/courses', data);
+};
+
 export const getCoursesByMentor = async (): Promise<Course[]> => {
     return await axiosActions.get('mentor/courses');
 };
@@ -26,6 +31,6 @@ export const getCourseByMentor = async (slug: string): Promise<Course> => {
     return await axiosActions.get(`mentor/courses/${slug}`);
 };
 
-export const updateCourse = async (id: string, values: any): Promise<Course> => {
+export const updateCourseByMentor = async (id: string, values: any): Promise<Course> => {
     return await axiosActions.patch(`mentor/courses/${id}`, values);
 };

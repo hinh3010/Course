@@ -7,7 +7,7 @@ import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import * as z from 'zod';
 
-import { updateCourse } from '@/actions/course-action';
+import { updateCourseByMentor } from '@/actions/course-action';
 import { Button } from '@/components/ui/button';
 import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
@@ -17,13 +17,14 @@ import { Course } from '@/types';
 
 interface PriceFormProps {
     initialData: Course;
+    onRefresh?: Function;
 }
 
 const formSchema = z.object({
     basePrice: z.coerce.number(),
 });
 
-export const PriceForm = ({ initialData }: PriceFormProps) => {
+export const PriceForm = ({ initialData, onRefresh }: PriceFormProps) => {
     const [isEditing, setIsEditing] = useState(false);
 
     const toggleEdit = () => setIsEditing((current) => !current);
@@ -41,9 +42,10 @@ export const PriceForm = ({ initialData }: PriceFormProps) => {
         try {
             if (values.basePrice === initialData.basePrice) return;
 
-            await updateCourse(initialData._id, values);
+            await updateCourseByMentor(initialData._id, values);
             toast.success('Course updated successfully');
             toggleEdit();
+            typeof onRefresh === 'function' && onRefresh();
         } catch {
             toast.error('Something went wrong');
         }

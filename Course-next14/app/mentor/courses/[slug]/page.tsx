@@ -13,7 +13,7 @@ import { ChaptersForm } from './_components/chapters-form';
 import { Actions } from './_components/actions';
 import { Category, Course } from '@/types';
 import { getCourseByMentor } from '@/actions/course-action';
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import toast from 'react-hot-toast';
 import { LoadingProvider } from '@/components/providers/loading-provider';
 import { CategoryForm } from './_components/category-form';
@@ -24,21 +24,21 @@ const CourseIdPage = ({ params }: { params: { slug: string } }) => {
     const [categories, setCategories] = useState<Category[]>([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchCourses = async () => {
-            try {
-                const [fetchedCourse, fetchedCategories] = await Promise.all([getCourseByMentor(params.slug), getServerCategories()]);
-                setCategories(fetchedCategories);
-                setCourse(fetchedCourse);
-            } catch (err: any) {
-                toast.error(err.message);
-            } finally {
-                setIsLoading(false);
-            }
-        };
-
-        fetchCourses();
+    const fetchCourses = useCallback(async () => {
+        try {
+            const [fetchedCourse, fetchedCategories] = await Promise.all([getCourseByMentor(params.slug), getServerCategories()]);
+            setCategories(fetchedCategories);
+            setCourse(fetchedCourse);
+        } catch (err: any) {
+            toast.error(err.message);
+        } finally {
+            setIsLoading(false);
+        }
     }, [params.slug]);
+
+    useEffect(() => {
+        fetchCourses();
+    }, [fetchCourses]);
 
     const { isComplete, completionText } = useMemo(() => {
         const { title, description, thumbnail, basePrice, categories, chapters } = course || {};
@@ -80,7 +80,7 @@ const CourseIdPage = ({ params }: { params: { slug: string } }) => {
                                 <h2 className="text-xl">Customize your course</h2>
                             </div>
                             <TitleForm initialData={course} />
-                            <DescriptionForm initialData={course} />
+                            <DescriptionForm initialData={course} onRefresh={fetchCourses} />
                             <ImageForm initialData={course} />
                             <CategoryForm
                                 initialData={course}
@@ -88,6 +88,7 @@ const CourseIdPage = ({ params }: { params: { slug: string } }) => {
                                     label: category.name,
                                     value: category._id,
                                 }))}
+                                onRefresh={fetchCourses}
                             />
                         </div>
                         <div className="space-y-6">
@@ -96,14 +97,14 @@ const CourseIdPage = ({ params }: { params: { slug: string } }) => {
                                     <IconBadge icon={ListChecks} />
                                     <h2 className="text-xl">Course chapters</h2>
                                 </div>
-                                <ChaptersForm initialData={course} courseId={course._id} />
+                                <ChaptersForm initialData={course} onRefresh={fetchCourses} />
                             </div>
                             <div>
                                 <div className="flex items-center gap-x-2">
                                     <IconBadge icon={CircleDollarSign} />
                                     <h2 className="text-xl">Sell your course</h2>
                                 </div>
-                                <PriceForm initialData={course} />
+                                <PriceForm initialData={course} onRefresh={fetchCourses} />
                             </div>
                             <div>
                                 <div className="flex items-center gap-x-2">

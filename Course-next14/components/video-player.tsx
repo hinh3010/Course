@@ -5,7 +5,7 @@ import PlyrComponent from 'plyr-react';
 import 'plyr-react/plyr.css';
 
 interface VideoPlayerProps {
-    isLocked: boolean;
+    isLocked?: boolean;
     videoUrl: string;
     thumbnail: string;
 }

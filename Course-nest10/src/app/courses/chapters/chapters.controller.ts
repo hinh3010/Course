@@ -32,6 +32,18 @@ export class ChaptersController {
   }
 
   // mentor
+  @Get('mentor/courses/:courseSlug/chapters/:chapterId')
+  @UseGuards(new RolesGuard('mentor'))
+  findChapterByMentor(@Param('courseSlug') courseSlug: string, @Param('chapterId') chapterId: string, @GetAccountContext('_id') accountId: string) {
+    const payload = {
+      courseSlug,
+      chapterId,
+      accountId,
+    };
+
+    return this.chaptersService.findChapterByMentor(payload);
+  }
+
   @Post('mentor/courses/:courseId/chapters')
   @UseGuards(new RolesGuard('mentor'))
   createChapterByCourse(
@@ -48,7 +60,7 @@ export class ChaptersController {
     return this.chaptersService.createChapterByCourse(payload);
   }
 
-  @Patch('mentor/courses/:courseId/chapters:chapterId')
+  @Patch('mentor/courses/:courseId/chapters/:chapterId')
   @UseGuards(new RolesGuard('mentor'))
   updateChapterByCourse(
     @Param('courseId') courseId: string,

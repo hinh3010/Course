@@ -39,6 +39,18 @@ export class ChaptersService {
     return course;
   }
 
+  private async _getCourseBySlug(courseSlug: string) {
+    const course = await CourseModel.findOne({
+      status: 'active',
+      isPublished: true,
+      slug: courseSlug,
+    }).lean();
+
+    if (!course) throw new HttpException('Course not found', HttpStatus.NOT_FOUND);
+
+    return course;
+  }
+
   async findAllChaptersByCourse(courseId: string) {
     await this._getCourseById(courseId);
 
@@ -69,11 +81,26 @@ export class ChaptersService {
   }
 
   // mentor
+  async findChapterByMentor(payload: { courseSlug: string; chapterId: string; accountId: string }) {
+    const { courseSlug, chapterId, accountId } = payload;
+    const course = await this._getCourseBySlug(courseSlug);
+    if (course.mentor.toString() !== accountId.toString()) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
+
+    const chapter = await ChapterModel.findOne({
+      course: course._id,
+      _id: chapterId,
+    }).lean();
+
+    if (!chapter) throw new HttpException('Chapter not found', HttpStatus.NOT_FOUND);
+
+    return chapter;
+  }
+
   async createChapterByCourse(payload: ChapterCreateAction) {
     const { courseId, createChapterDto, accountId } = payload;
 
     const course = await this._getCourseById(courseId);
-    if (course.mentor.toString() !== accountId) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
+    if (course.mentor.toString() !== accountId.toString()) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
 
     const { title, isFree, isPublished } = createChapterDto;
 
@@ -115,7 +142,7 @@ export class ChaptersService {
     const { courseId, chapterId, updateChapterDto, accountId } = payload;
 
     const course = await this._getCourseById(courseId);
-    if (course.mentor.toString() !== accountId) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
+    if (course.mentor.toString() !== accountId.toString()) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
 
     const chapter = await ChapterModel.findOne({
       _id: chapterId,
@@ -152,7 +179,7 @@ export class ChaptersService {
     const { courseId, chapterId, accountId } = payload;
 
     const course = await this._getCourseById(courseId);
-    if (course.mentor.toString() !== accountId) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
+    if (course.mentor.toString() !== accountId.toString()) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
 
     const chapter = await ChapterModel.exists({
       _id: chapterId,
@@ -174,7 +201,7 @@ export class ChaptersService {
     const { courseId, chaptersDto, accountId } = payload;
 
     const course = await this._getCourseById(courseId);
-    if (course.mentor.toString() !== accountId) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
+    if (course.mentor.toString() !== accountId.toString()) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
 
     const bulkReorder = [];
 
@@ -199,7 +226,7 @@ export class ChaptersService {
     const { courseId, chapterId, isPublished, accountId } = payload;
 
     const course = await this._getCourseById(courseId);
-    if (course.mentor.toString() !== accountId) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
+    if (course.mentor.toString() !== accountId.toString()) throw new HttpException('You do not have permission', HttpStatus.NOT_FOUND);
 
     const chapter = await ChapterModel.findOneAndUpdate({ _id: chapterId, course: courseId }, { $set: { isPublished: isPublished } }, { new: true });
 
